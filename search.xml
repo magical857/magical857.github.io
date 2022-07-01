@@ -90,6 +90,25 @@
       </tags>
   </entry>
   <entry>
+    <title>优秀的软硬件开源项目收藏</title>
+    <url>/2022/03/02/%E5%B5%8C%E5%85%A5%E5%BC%8F/</url>
+    <content><![CDATA[<hr>
+<h2 id="100多个优秀的软硬件开源项目"><a href="#100多个优秀的软硬件开源项目" class="headerlink" title="100多个优秀的软硬件开源项目"></a>100多个优秀的软硬件开源项目</h2><hr>
+<h2 id="嵌入式相关开源项目、库、资料——持续更新中"><a href="#嵌入式相关开源项目、库、资料——持续更新中" class="headerlink" title="嵌入式相关开源项目、库、资料——持续更新中"></a>嵌入式相关开源项目、库、资料——持续更新中</h2><blockquote>
+<p><em><strong>学习初期最难找的就是找学习资料了，本贴精心汇总了一些嵌入式相关资源，包括但不限于编程语言、单片机、开源项目、物联网、操作系统、Linux等资源，并且在不断地更新中，致力于打造全网最全的嵌入式资料库。有好的嵌入式相关资源的朋友欢迎做贡献，利人利己。</strong></em></p>
+</blockquote>
+<p><img src="/magical/Documents/henry6blog/public/media/org.volantis/blog/gitee.png" alt="网站截图" title="Magic Gardens"></p>
+<p><a href="https://gitee.com/zhengnianli/EmbedSummary">点击这里查看</a></p>
+<hr>
+]]></content>
+      <categories>
+        <category>分享</category>
+      </categories>
+      <tags>
+        <tag>嵌入式</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>blog搬家</title>
     <url>/2022/06/30/hello-world/</url>
     <content><![CDATA[<hr>
@@ -108,24 +127,5 @@
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>优秀的软硬件开源项目收藏</title>
-    <url>/2022/03/02/%E5%B5%8C%E5%85%A5%E5%BC%8F/</url>
-    <content><![CDATA[<hr>
-<h2 id="100多个优秀的软硬件开源项目"><a href="#100多个优秀的软硬件开源项目" class="headerlink" title="100多个优秀的软硬件开源项目"></a>100多个优秀的软硬件开源项目</h2><hr>
-<h2 id="嵌入式相关开源项目、库、资料——持续更新中"><a href="#嵌入式相关开源项目、库、资料——持续更新中" class="headerlink" title="嵌入式相关开源项目、库、资料——持续更新中"></a>嵌入式相关开源项目、库、资料——持续更新中</h2><blockquote>
-<p><em><strong>学习初期最难找的就是找学习资料了，本贴精心汇总了一些嵌入式相关资源，包括但不限于编程语言、单片机、开源项目、物联网、操作系统、Linux等资源，并且在不断地更新中，致力于打造全网最全的嵌入式资料库。有好的嵌入式相关资源的朋友欢迎做贡献，利人利己。</strong></em></p>
-</blockquote>
-<p><img src="/magical/Documents/henry6blog/public/media/org.volantis/blog/gitee.png" alt="网站截图" title="Magic Gardens"></p>
-<p><a href="https://gitee.com/zhengnianli/EmbedSummary">点击这里查看</a></p>
-<hr>
-]]></content>
-      <categories>
-        <category>分享</category>
-      </categories>
-      <tags>
-        <tag>嵌入式</tag>
-      </tags>
   </entry>
 </search>
