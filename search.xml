@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>markDown学习总结</title>
+    <url>/2022/05/25/MARKDOWN%E2%80%94%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/</url>
+    <content><![CDATA[<h1 id="记录一下中午markDown语法的学习"><a href="#记录一下中午markDown语法的学习" class="headerlink" title="记录一下中午markDown语法的学习"></a>记录一下中午markDown语法的学习</h1><blockquote>
+<h2 id="学习的网站Markdown-Tutorial"><a href="#学习的网站Markdown-Tutorial" class="headerlink" title="学习的网站Markdown Tutorial"></a>学习的网站<a href="https://www.markdowntutorial.com/zh-cn/conclusion/"><strong>Markdown Tutorial</strong></a></h2></blockquote>
+<hr>
+<h3 id="1-斜字体，字体加粗强调"><a href="#1-斜字体，字体加粗强调" class="headerlink" title="1. 斜字体，字体加粗强调"></a>1. <em>斜字体</em>，<strong>字体加粗强调</strong></h3><blockquote>
+<ul>
+<li><pre><code>    在需要变斜字体或词语左右加&quot;_&quot;或者&quot;*&quot;,例如：_wewe_、*dwdw*
+</code></pre>
+</li>
+<li><pre><code>    在需要变粗的的字体或词语左右加&quot;**&quot;,例如:**dwdw**
+</code></pre>
+</li>
+</ul>
+</blockquote>
+<hr>
+<h3 id="2-标题（最多六级）"><a href="#2-标题（最多六级）" class="headerlink" title="2. 标题（最多六级）"></a>2. 标题（<strong>最多六级</strong>）</h3><blockquote>
+<ul>
+<li><h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1></li>
+<li><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2></li>
+<li><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3></li>
+<li><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4></li>
+<li><h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5></li>
+<li><h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6></li>
+</ul>
+</blockquote>
+<hr>
+<h3 id="3-链接（图片和文字）"><a href="#3-链接（图片和文字）" class="headerlink" title="3. 链接（图片和文字）"></a>3. 链接（<strong>图片和文字</strong>）</h3><blockquote>
+<ul>
+<li><strong>第一种</strong><br>在[ ]添加描述文本,紧接着后面加上（ ），圆括号里面放链接例如：[这是一个例子]（<a href="https://siguso.com/%EF%BC%89">https://siguso.com/）</a><br>效果：<a href="https://siguso.com/">这是一个例子</a></li>
+<li><strong>第二种</strong><br><em>全局链接</em><br>例如:</li>
+</ul>
+</blockquote>
+<pre><code> 这是 [其它玩意][another place].  
+ 这是 [另一个链接][another-link].  
+ 现在回到 [第一个链接][another place].
+
+ [another place]: www.github.com  
+ [another-link]: www.bing.com
+</code></pre>
+<blockquote>
+<p>效果如下：<br>这是 <a href="www.github.com">其它玩意</a>.<br>这是 <a href="www.google.com">另一个链接</a>.<br>现在回到 <a href="www.github.com">第一个链接</a>.</p>
+</blockquote>
+<blockquote>
+<p>创建一个内联的图片链接,需要输入一个感叹号!将方括号 [ ]中的描述性文本包裹起来， 然后使用圆括号 ( )包裹链接地址。<a href="https://upload.wikimedia.org/wikipedia/commons/5/56/Tiger.50.jpg">https://upload.wikimedia.org/wikipedia/commons/5/56/Tiger.50.jpg</a><br><img src="https://upload.wikimedia.org/wikipedia/commons/5/56/Tiger.50.jpg" alt="A pretty tiger"></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>总结</category>
+      </categories>
+      <tags>
+        <tag>markDown</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>AD学生认证</title>
+    <url>/2022/03/05/ad%E5%AD%A6%E7%94%9F%E8%AE%A4%E8%AF%81/</url>
+    <content><![CDATA[<h2 id="学生如何使用正版Altium-Designer软件；正版AD安装；AD如何使用正版license（适用于老师、学生、校友等等）"><a href="#学生如何使用正版Altium-Designer软件；正版AD安装；AD如何使用正版license（适用于老师、学生、校友等等）" class="headerlink" title="学生如何使用正版Altium Designer软件；正版AD安装；AD如何使用正版license（适用于老师、学生、校友等等）"></a>学生如何使用正版Altium Designer软件；正版AD安装；AD如何使用正版license（适用于老师、学生、校友等等）</h2><hr>
+<p><a href="https://blog.csdn.net/qq_41570901/article/details/121495124">点击此处查看</a></p>
+<hr>
+]]></content>
+      <categories>
+        <category>EDA</category>
+      </categories>
+      <tags>
+        <tag>AD</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>My first blog</title>
+    <url>/2022/01/10/first_blog/</url>
+    <content><![CDATA[<h2 id="HEAD-LINE"><a href="#HEAD-LINE" class="headerlink" title="HEAD LINE"></a>HEAD LINE</h2><p>毅宁</p>
+<hr>
+<h2 id="SECOND-LINE"><a href="#SECOND-LINE" class="headerlink" title="SECOND LINE"></a>SECOND LINE</h2><p>HENRY LAU ——刘宪华</p>
+<hr>
+<h2 id="THIRD-LINE"><a href="#THIRD-LINE" class="headerlink" title="THIRD LINE"></a>THIRD LINE</h2><p>知识是不会自己跑进脑子里的,需要自己慢慢去磨.<br>我尝试过很多有意思的东西,现虽有些生疏,但简单玩一玩还是可以的.</p>
+<hr>
+<h2 id="一些收藏"><a href="#一些收藏" class="headerlink" title="一些收藏"></a>一些收藏</h2><p><a href="https://siguso.com/">思古搜</a><br><a href="https://oshwhub.com/">立创开源社区</a><br><a href="https://www.bilibili.com/video/BV1EW411u7th?spm_id_from=333.999.0.0">计算机科学速成课-下饭</a><br><a href="https://www.bilibili.com/video/BV1nt411f7To?spm_id_from=333.999.0.0">清翔零基础51单片机教程</a><br><a href="https://www.bilibili.com/video/BV11s41167h6?spm_id_from=333.999.0.0">【郝斌】-数据结构入门</a><br><a href="http://tool.liumingye.cn/music/?page=audioPage&type=migu&name=%E5%88%98%E5%AE%AA%E5%8D%8E">freemp3-henry</a></p>
+<p>待续中</p>
+<hr>
+]]></content>
+      <categories>
+        <category>日志</category>
+      </categories>
+      <tags>
+        <tag>闲聊</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>blog搬家</title>
+    <url>/2022/06/30/hello-world/</url>
+    <content><![CDATA[<hr>
+<p>选用<a href="https://github.com/Fechin/hexo-theme-diaspora">diaspora</a>作为新的主题。</p>
+<hr>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>优秀的软硬件开源项目收藏</title>
+    <url>/2022/03/02/%E5%B5%8C%E5%85%A5%E5%BC%8F/</url>
+    <content><![CDATA[<hr>
+<h2 id="100多个优秀的软硬件开源项目"><a href="#100多个优秀的软硬件开源项目" class="headerlink" title="100多个优秀的软硬件开源项目"></a>100多个优秀的软硬件开源项目</h2><hr>
+<h2 id="嵌入式相关开源项目、库、资料——持续更新中"><a href="#嵌入式相关开源项目、库、资料——持续更新中" class="headerlink" title="嵌入式相关开源项目、库、资料——持续更新中"></a>嵌入式相关开源项目、库、资料——持续更新中</h2><blockquote>
+<p><em><strong>学习初期最难找的就是找学习资料了，本贴精心汇总了一些嵌入式相关资源，包括但不限于编程语言、单片机、开源项目、物联网、操作系统、Linux等资源，并且在不断地更新中，致力于打造全网最全的嵌入式资料库。有好的嵌入式相关资源的朋友欢迎做贡献，利人利己。</strong></em></p>
+</blockquote>
+<p><img src="/magical/Documents/henry6blog/public/media/org.volantis/blog/gitee.png" alt="网站截图" title="Magic Gardens"></p>
+<p><a href="https://gitee.com/zhengnianli/EmbedSummary">点击这里查看</a></p>
+<hr>
+]]></content>
+      <categories>
+        <category>分享</category>
+      </categories>
+      <tags>
+        <tag>嵌入式</tag>
+      </tags>
+  </entry>
+</search>
