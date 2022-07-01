@@ -25,8 +25,8 @@
   <!-- Custom Files headBegin begin-->
   
   <!-- Custom Files headBegin end-->
-  <link rel="preload" href="/css/style.13e9f403.css" as="style">
-  <link rel="preload" href="https://unpkg.com/volantis-static@0.0.1654736714924/media/fonts/VarelaRound/VarelaRound-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+  <link rel="preload" href="/css/style.e0b0fc1a.css" as="style">
+  <link rel="preload" href="/font/henry6/henry6.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 <link rel="preload" href="https://unpkg.com/volantis-static@0.0.1654736714924/media/fonts/UbuntuMono/UbuntuMono-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 
   <!-- feed -->
@@ -235,7 +235,7 @@ button {
   -webkit-box-shadow: 0 2px 4px 0px rgba(0,0,0,0.1), 0 4px 8px 0px rgba(0,0,0,0.1), 0 8px 16px 0px rgba(0,0,0,0.1);
 }
 #l_cover {
-  min-height: 64px;
+  min-height: 39.552px;
 }
 .cover-wrapper {
   top: 0;
@@ -384,7 +384,7 @@ button {
 .cover-wrapper#half {
   max-height: 640px;
   min-height: 400px;
-  height: calc(36vh - 64px + 200px);
+  height: calc(36vh - 39.552px + 200px);
 }
 .cover-wrapper #scroll-down {
   width: 100%;
@@ -490,7 +490,7 @@ button {
   }
 }
 .cover-wrapper .cover-body {
-  margin-top: 64px;
+  margin-top: 39.552px;
   margin-bottom: 100px;
 }
 .cover-wrapper .cover-body,
@@ -522,7 +522,7 @@ button {
   margin-top: 32px;
 }
 .cover-wrapper .cover-body .title {
-  font-family: "Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial, Helvetica, monospace;
+  font-family: "Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial, henry6, Helvetica, monospace;
   font-size: 3.125rem;
   line-height: 1.2;
   text-shadow: 0 1px 2px rgba(0,0,0,0.1);
@@ -788,53 +788,34 @@ button {
 .cover-wrapper.focus .menu .list-h a:hover {
   background: var(--color-card);
 }
-.cover-wrapper.dock .top {
-  margin-bottom: 48px;
+.cover-wrapper.focus .menu {
+  transition: all 0.28s ease;
+  -webkit-transition: all 0.28s ease;
+  -khtml-transition: all 0.28s ease;
+  -moz-transition: all 0.28s ease;
+  -o-transition: all 0.28s ease;
+  -ms-transition: all 0.28s ease;
 }
-.cover-wrapper.dock .menu {
+.cover-wrapper.focus .menu .list-h {
+  margin: 2px;
+}
+.cover-wrapper.focus .menu:hover {
   background: rgba(255,255,255,0.5);
-  position: absolute;
-  bottom: 0;
-  max-width: 100%;
-}
-.cover-wrapper.dock .menu .list-h {
-  flex-wrap: nowrap;
-  -webkit-flex-wrap: nowrap;
-  -khtml-flex-wrap: nowrap;
-  -moz-flex-wrap: nowrap;
-  -o-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  margin: 4px;
-}
-.cover-wrapper.dock .menu .list-h a+a {
-  margin-left: 4px;
-}
-@media screen and (max-width: 500px) {
-  .cover-wrapper.dock .menu .list-h {
-    overflow-x: scroll;
-  }
-  .cover-wrapper.dock .menu .list-h::-webkit-scrollbar {
-    height: 0;
-    width: 0;
-  }
-  .cover-wrapper.dock .menu .list-h::-webkit-scrollbar-track-piece {
-    background: transparent;
-  }
-  .cover-wrapper.dock .menu .list-h::-webkit-scrollbar-thumb {
-    background: #3dd9b6;
-    cursor: pointer;
-    border-radius: 0;
-    -webkit-border-radius: 0;
-  }
-  .cover-wrapper.dock .menu .list-h::-webkit-scrollbar-thumb:hover {
-    background: #ff5722;
-  }
 }
 @supports (backdrop-filter: blur(20px)) {
-  .cover-wrapper.dock .menu {
+  .cover-wrapper.focus .menu:hover {
     background: rgba(255,255,255,0.5);
     backdrop-filter: saturate(200%) blur(20px);
   }
+}
+.cover-wrapper.focus .menu .list-h a {
+  margin: 2px;
+}
+.cover-wrapper.focus .menu .list-h a:hover {
+  opacity: 1;
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  background: var(--color-card);
 }
 @font-face {
   font-family: 'UbuntuMono';
@@ -844,8 +825,8 @@ button {
   font-display: swap;
 }
 @font-face {
-  font-family: 'Varela Round';
-  src: url("https://unpkg.com/volantis-static@0.0.1654736714924/media/fonts/VarelaRound/VarelaRound-Regular.ttf");
+  font-family: 'henry6';
+  src: url("/font/henry6/henry6.ttf");
   font-weight: 'normal';
   font-style: 'normal';
   font-display: swap;
@@ -855,7 +836,7 @@ button {
   z-index: 1000;
   top: 0;
   width: 100%;
-  height: 64px;
+  height: 39.552px;
   background: var(--color-card);
   box-shadow: 0 1px 2px 0px rgba(0,0,0,0.1);
   -webkit-box-shadow: 0 1px 2px 0px rgba(0,0,0,0.1);
@@ -917,12 +898,12 @@ button {
   -ms-transition: all 0.28s ease;
 }
 .l_header #wrapper.sub .nav-main {
-  transform: translateY(-64px);
-  -webkit-transform: translateY(-64px);
-  -khtml-transform: translateY(-64px);
-  -moz-transform: translateY(-64px);
-  -o-transform: translateY(-64px);
-  -ms-transform: translateY(-64px);
+  transform: translateY(-39.552px);
+  -webkit-transform: translateY(-39.552px);
+  -khtml-transform: translateY(-39.552px);
+  -moz-transform: translateY(-39.552px);
+  -o-transform: translateY(-39.552px);
+  -ms-transform: translateY(-39.552px);
 }
 .l_header #wrapper .nav-sub {
   transition: all 0.28s ease;
@@ -934,7 +915,7 @@ button {
   opacity: 0;
   -webkit-opacity: 0;
   -moz-opacity: 0;
-  height: 64px;
+  height: 39.552px;
   width: calc(100% - 2 * 16px);
   position: absolute;
 }
@@ -958,20 +939,20 @@ button {
   position: relative;
   color: var(--color-text);
   padding-left: 24px;
-  max-height: 64px;
+  max-height: 39.552px;
 }
 .l_header #wrapper .nav-main .title {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   flex-shrink: 0;
-  line-height: 64px;
+  line-height: 39.552px;
   padding: 0 24px;
   font-size: 1.25rem;
-  font-family: "Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial, Helvetica, monospace;
+  font-family: "Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial, henry6, Helvetica, monospace;
 }
 .l_header #wrapper .nav-main .title img {
-  height: 64px;
+  height: 39.552px;
 }
 .l_header .nav-sub {
   max-width: 1080px;
@@ -981,7 +962,7 @@ button {
   font-weight: bold;
   font-family: UbuntuMono, "Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial, Menlo, Monaco, monospace, sans-serif;
   line-height: 1.2;
-  max-height: 64px;
+  max-height: 39.552px;
   white-space: normal;
   flex-shrink: 1;
 }
@@ -989,7 +970,7 @@ button {
   display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
   display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
   display: none;
-  line-height: 64px;
+  line-height: 39.552px;
   align-items: center;
 }
 .l_header .switcher .s-toc {
@@ -1008,7 +989,7 @@ button {
   }
 }
 .l_header .switcher >li {
-  height: 48px;
+  height: 23.552px;
   transition: all 0.28s ease;
   -webkit-transition: all 0.28s ease;
   -khtml-transition: all 0.28s ease;
@@ -1020,7 +1001,7 @@ button {
 @media screen and (max-width: 500px) {
   .l_header .switcher >li {
     margin: 0 1px;
-    height: 48px;
+    height: 23.552px;
   }
 }
 .l_header .switcher >li >a {
@@ -1037,8 +1018,8 @@ button {
   -o-justify-content: center;
   -ms-justify-content: center;
   align-items: center;
-  width: 48px;
-  height: 48px;
+  width: 23.552px;
+  height: 23.552px;
   padding: 0.85em 1.1em;
   border-radius: 100px;
   -webkit-border-radius: 100px;
@@ -1062,7 +1043,7 @@ button {
 @media screen and (max-width: 500px) {
   .l_header .switcher >li >a {
     width: 36px;
-    height: 48px;
+    height: 23.552px;
   }
 }
 .l_header .nav-sub .switcher {
@@ -1080,7 +1061,7 @@ button {
   display: -webkit-flex /* NEW - Chrome */;
   display: flex /* NEW, Spec - Opera 12.1, Firefox 20+ */;
   display: flex;
-  height: 64px;
+  height: 39.552px;
   width: 240px;
   transition: all 0.28s ease;
   -webkit-transition: all 0.28s ease;
@@ -1211,8 +1192,8 @@ button {
     -ms-transition: all 0.28s ease;
   }
   .l_header .m_search .input {
-    border-radius: 32px;
-    -webkit-border-radius: 32px;
+    border-radius: 19.776px;
+    -webkit-border-radius: 19.776px;
     margin-left: 16px;
     padding-left: 16px;
   }
@@ -1359,10 +1340,10 @@ ul.list-v >li>a:hover {
 }
 .l_header ul.nav-list-h>li {
   color: var(--color-list);
-  line-height: 64px;
+  line-height: 39.552px;
 }
 .l_header ul.nav-list-h>li >a {
-  max-height: 64px;
+  max-height: 39.552px;
   overflow: hidden;
   color: inherit;
 }
@@ -1674,8 +1655,8 @@ ul.list-v >li>a:hover {
 }
 
   </style>
-  <link rel="stylesheet" href="/css/style.13e9f403.css" media="print" onload="this.media='all';this.onload=null">
-  <noscript><link rel="stylesheet" href="/css/style.13e9f403.css"></noscript>
+  <link rel="stylesheet" href="/css/style.e0b0fc1a.css" media="print" onload="this.media='all';this.onload=null">
+  <noscript><link rel="stylesheet" href="/css/style.e0b0fc1a.css"></noscript>
   
 <script>
 if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMode))
@@ -1747,9 +1728,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   volantis.GLOBAL_CONFIG ={
     debug: false,
-    cdn: {"js":{"app":"/js/app.af2d54c8.js","parallax":"/js/plugins/parallax.8bf0ab10.js","rightMenu":"/js/plugins/rightMenu.d9437285.js","rightMenus":"/js/plugins/rightMenus.4d580c89.js","sites":"/js/plugins/tags/sites.76bf19b8.js","friends":"/js/plugins/tags/friends.f372da57.js","contributors":"/js/plugins/tags/contributors.aec80453.js","search":"/js/search/hexo.0e52f222.js"},"css":{"style":"/css/style.13e9f403.css"}},
+    cdn: {"js":{"app":"/js/app.af2d54c8.js","parallax":"/js/plugins/parallax.8bf0ab10.js","rightMenu":"/js/plugins/rightMenu.d9437285.js","rightMenus":"/js/plugins/rightMenus.4d580c89.js","sites":"/js/plugins/tags/sites.76bf19b8.js","friends":"/js/plugins/tags/friends.f372da57.js","contributors":"/js/plugins/tags/contributors.aec80453.js","search":"/js/search/hexo.0e52f222.js"},"css":{"style":"/css/style.e0b0fc1a.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1656633093277),
+    lastupdate: new Date(1656659262775),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate"],
       for_post: ["toc"],
@@ -1768,6 +1749,18 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       message: {"enable":true,"css":"https://unpkg.com/volantis-static@0.0.1654736714924/libs/izitoast/dist/css/iziToast.min.css","js":"https://unpkg.com/volantis-static@0.0.1654736714924/libs/izitoast/dist/js/iziToast.min.js","icon":{"default":"fa-solid fa-info-circle light-blue","quection":"fa-solid fa-question-circle light-blue"},"time":{"default":5000,"quection":20000},"position":"topRight","transitionIn":"bounceInLeft","transitionOut":"fadeOutRight","titleColor":"var(--color-text)","messageColor":"var(--color-text)","backgroundColor":"var(--color-card)","zindex":2147483647,"copyright":{"enable":true,"title":"知识共享许可协议","message":"请遵守 CC BY-NC-SA 4.0 协议。","icon":"far fa-copyright light-blue"},"aplayer":{"enable":true,"play":"fa-solid fa-play","pause":"fa-solid fa-pause"},"rightmenu":{"enable":true,"notice":true}},
       fancybox: {"css":"https://unpkg.com/volantis-static@0.0.1654736714924/libs/@fancyapps/ui/dist/fancybox.css","js":"https://unpkg.com/volantis-static@0.0.1654736714924/libs/@fancyapps/ui/dist/fancybox.umd.js"},
       
+      aplayer: {
+        id: 3175833810,
+        enable:true
+      },
+      
+      
+      rightmenu: {
+        faicon: "fa",
+        layout: ["home","hr","help","examples","contributors","hr","source_docs","source_theme","hr","print","darkmode","reading","music"],
+        music_alwaysShow: true,
+        customPicUrl: {"enable":false,"old":null,"new":null}
+      },
       
       
       rightmenus: {"enable":true,"order":["plugins.navigation","hr","plugins.inputBox","plugins.seletctText","plugins.elementCheck","plugins.elementImage","menus.link","hr","menus.darkMode","plugins.articlePage","music"],"options":{"iconPrefix":"fa-solid","articleShowLink":false,"musicAlwaysShow":false},"plugins":{"navigation":[{"id":"left","name":"转到上一页","icon":"fa-solid fa-arrow-left","event":"history.back()","group":"navigation"},{"id":"right","name":"转到下一页","icon":"fa-solid fa-arrow-right","event":"history.forward()","group":"navigation"},{"id":"redo","name":"刷新当前页面","icon":"fa-solid fa-redo","event":"window.location.reload()","group":"navigation"},{"id":"up","name":"回到顶部","icon":"fa-solid fa-arrow-up","event":"VolantisApp.scrolltoElement(volantis.dom.bodyAnchor)","group":"navigation"}],"inputBox":[{"id":"copyPaste","name":"粘贴文本","icon":"fa-solid fa-paste","event":"copyPaste","group":"inputBox"},{"id":"copyAll","name":"全选文本","icon":"fa-solid fa-object-ungroup","event":"copyAll","group":"inputBox"},{"id":"copyCut","name":"剪切文本","icon":"fa-solid fa-cut","event":"copyCut","group":"inputBox"}],"seletctText":[{"id":"copyText","name":"复制文本","icon":"fa-solid fa-copy","event":"copyText","group":"seletctText"},{"id":"searchWord","name":"站内搜索","icon":"fa-solid fa-search","event":"OpenSearch(__text__)","group":"seletctText"},{"id":"bingSearch","name":"必应搜索","icon":"fa-solid fa-search","event":"window.open(`https://cn.bing.com/search?q=${__text__}`)","group":"seletctText"}],"elementCheck":[{"id":"openTab","name":"新标签页打开","icon":"fa-solid fa-external-link-square-alt","event":"window.open(__link__)","group":"elementCheck"},{"id":"copyLink","name":"复制链接地址","icon":"fa-solid fa-link","event":"copyLink","group":"elementCheck"}],"elementImage":[{"id":"copyImg","name":"复制图片","icon":"fa-solid fa-image","event":"copyImg","group":"elementImage"},{"id":"googleImg","name":"谷歌识图","icon":"fa-solid fa-images","event":"window.open(`https://www.google.com.hk/searchbyimage?image_url=${__link__}`)","group":"elementImage"}],"articlePage":[{"id":"printMode","name":"打印页面","icon":"fa-solid fa-print","event":"printMode","group":"articlePage"},{"id":"readMode","name":"阅读模式","icon":"fa-solid fa-book-open","event":"readMode","group":"articlePage"}]},"menus":{"link":[{"id":"help","name":"常见问题","icon":"fa-solid fa-question","link":"https://volantis.js.org/faqs/","group":"link"},{"id":"examples","name":"示例博客","icon":"fa-solid fa-rss","link":"https://volantis.js.org/examples/","group":"link"},{"id":"contributors","name":"加入社区","icon":"fa-solid fa-fan","link":"https://volantis.js.org/contributors/","group":"link"},"hr",{"id":"source_docs","name":"本站源码","icon":"fa-solid fa-code-branch","link":"https://github.com/volantis-x/volantis-docs/","group":"link"},{"id":"source_theme","name":"主题源码","icon":"fa-solid fa-code-branch","link":"https://github.com/volantis-x/hexo-theme-volantis/","group":"link"}],"darkMode":[{"id":"darkMode","name":"暗黑模式","icon":"fa-solid fa-moon","event":"volantis.dark.toggle()","group":"darkMode"}]}}
@@ -2169,7 +2162,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <!-- Custom Files bodyBegin begin-->
     
     <!-- Custom Files bodyBegin end-->
-    <header itemscope itemtype="http://schema.org/WPHeader" id="l_header" class="l_header auto shadow floatable blur " style='opacity: 0' >
+    <header itemscope itemtype="http://schema.org/WPHeader" id="l_header" class="l_header auto floatable " style='opacity: 0' >
   <div class='container'>
   <div id='wrapper'>
     <div class='nav-sub'>
@@ -2438,7 +2431,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
-      <div id="full" class='cover-wrapper  dock' style="display: ;">
+      <div id="full" class='cover-wrapper  focus' style="display: ;">
         
   <div class='cover-bg lazyload placeholder' data-bg="https://fastly.jsdelivr.net/gh/MHG-LAB/cron@gh-pages/bing/bing.jpg"></div>
 
@@ -2446,57 +2439,15 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div class='top'>
     
     
-      <p class="title">Volantis</p>
+      <p class="title">Blog for henry6</p>
     
+    
+      <p class="subtitle"><br/>读万卷书，行万里路</p>
     
   </div>
   <div class='bottom'>
     <div class='menu navigation'>
       <div class='list-h'>
-        
-          
-            <a href="/v4/getting-started/"
-              
-              
-              active-action="action-v4getting-started">
-              <img src='https://unpkg.com/volantis-static@0.0.1654736714924/media/twemoji/assets/svg/1f5c3.svg'><p>文档</p>
-            </a>
-          
-            <a href="/faqs/"
-              
-              
-              active-action="action-faqs">
-              <img src='https://unpkg.com/volantis-static@0.0.1654736714924/media/twemoji/assets/svg/1f516.svg'><p>帮助</p>
-            </a>
-          
-            <a href="/examples/"
-              
-              
-              active-action="action-examples">
-              <img src='https://unpkg.com/volantis-static@0.0.1654736714924/media/twemoji/assets/svg/1f396.svg'><p>示例</p>
-            </a>
-          
-            <a href="/contributors/"
-              
-              
-              active-action="action-contributors">
-              <img src='https://unpkg.com/volantis-static@0.0.1654736714924/media/twemoji/assets/svg/1f389.svg'><p>社区</p>
-            </a>
-          
-            <a href="/archives/"
-              
-              
-              active-action="action-archives">
-              <img src='https://unpkg.com/volantis-static@0.0.1654736714924/media/twemoji/assets/svg/1f4f0.svg'><p>博客</p>
-            </a>
-          
-            <a target="_blank" rel="noopener" href="https://github.com/volantis-x/hexo-theme-volantis/"
-              
-              
-              active-action="action-https:githubcomvolantis-xhexo-theme-volantis">
-              <img src='https://unpkg.com/volantis-static@0.0.1654736714924/media/twemoji/assets/svg/1f9ec.svg'><p>源码</p>
-            </a>
-          
         
       </div>
     </div>
@@ -2527,7 +2478,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         
           <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
+            <div class="post post-v3 white-box reveal floatable"  itemscope itemtype="http://schema.org/Article" >
   <link itemprop="mainEntityOfPage" href="https://magical857.github.io/2022/06/30/hello-world/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Henry6的小破站">
@@ -2753,6 +2704,22 @@ Qu...
         <div class="aplayer-container">
           
 
+  
+    <meting-js
+      theme='#1BCDFC'
+      autoplay='false'
+      volume='0.7'
+      loop='all'
+      order='list'
+      fixed='false'
+      list-max-height='320px'
+      server='netease'
+      type='playlist'
+      id='3175833810'
+      list-folded='true'>
+    </meting-js>
+  
+
 
         </div>
       
@@ -2823,16 +2790,222 @@ Qu...
   volantis.css("https://unpkg.com/volantis-static@0.0.1654736714924/libs/@fortawesome/fontawesome-free/css/all.min.css");
   
   
+  volantis.css("https://unpkg.com/volantis-static@0.0.1654736714924/libs/font-awesome-animation/font-awesome-animation.min.css");
+  
   
 </script>
 
 <!-- required -->
+
+  
+<script src="https://unpkg.com/volantis-static@0.0.1654736714924/libs/jquery/dist/jquery.min.js"></script>
+
 
 
 <!-- internal -->
 
 <script src="/js/app.af2d54c8.js"></script>
 
+
+
+  
+  
+  
+  <div id="rightmenu-wrapper">
+    <ul class="list-v rightmenu" id="rightmenu-content">
+      <li class='navigation menuNavigation-Content'>
+        <a class='nav icon-only fix-cursor-default' onclick='history.back()'><i class='fa fa-arrow-left fa-fw'></i></a>
+        <a class='nav icon-only fix-cursor-default' onclick='history.forward()'><i class='fa fa-arrow-right fa-fw'></i></a>
+        <a class='nav icon-only fix-cursor-default' onclick='window.location.reload()'><i class='fa fa-redo fa-fw'></i></a>
+        <a class='nav icon-only fix-cursor-default' href='/'><i class='fa fa-home fa-fw'></i></a>
+      </li>
+      <li class='option menuOption-Content'>
+        <span class='vlts-menu opt fix-cursor-default menu-Option' data-fn-type='copyText'>
+          
+          <i class='fa fa-copy fa-fw'></i> 复制文本
+        </span>
+        <span class='vlts-menu opt fix-cursor-default menu-Option' data-fn-type='copyPaste'>
+          
+          <i class='fa fa-paste fa-fw mR12'></i> 粘贴文本
+        </span>
+        <span class='vlts-menu opt fix-cursor-default menu-Option' data-fn-type='copySelect'>
+          
+          <i class='fa fa-object-ungroup fa-fw mR12'></i> 全选文本
+        </span>
+        <span class='vlts-menu opt fix-cursor-default menu-Option' data-fn-type='copyCut'>
+          
+          <i class='fa fa-cut fa-fw mR12'></i> 剪切文本
+        </span>
+        
+        <span class='vlts-menu opt fix-cursor-default menu-Option' data-fn-type='searchWord'>
+          
+          <i class='fa fa-search fa-fw'></i> 站内搜索
+        </span>
+        
+        <span class='vlts-menu opt fix-cursor-default menu-Option' data-fn-type='openTab'>
+          
+          <i class='fa fa-external-link-square-alt fa-fw mR12'></i> 在新标签页打开
+        </span>
+        <span class='vlts-menu opt fix-cursor-default menu-Option' data-fn-type='copySrc'>
+          
+          <i class='fa fa-image fa-fw mR12'></i> 复制图片地址
+        </span>
+        <span class='vlts-menu opt fix-cursor-default menu-Option' data-fn-type='copyImg'>
+          
+          <i class='fa fa-images fa-fw mR12'></i> 复制图片文件
+        </span>
+      </li>
+      
+        
+      
+        
+          <hr class="menuLoad-Content">
+        
+      
+        
+          
+    <li class="menuLoad-Content">
+      <a class='vlts-menu fix-cursor-default' href=https://volantis.js.org/faqs/
+        
+        
+        
+        
+          id="https:volantisjsorgfaqs"
+        
+      >
+        <i class='fa fa-question fa-fw'></i> 常见问题
+      </a>
+    </li>
+  
+        
+      
+        
+          
+    <li class="menuLoad-Content">
+      <a class='vlts-menu fix-cursor-default' href=https://volantis.js.org/examples/
+        
+        
+        
+        
+          id="https:volantisjsorgexamples"
+        
+      >
+        <i class='fa fa-rss fa-fw'></i> 示例博客
+      </a>
+    </li>
+  
+        
+      
+        
+          
+    <li class="menuLoad-Content">
+      <a class='vlts-menu fix-cursor-default' href=https://volantis.js.org/contributors/
+        
+        
+        
+        
+          id="https:volantisjsorgcontributors"
+        
+      >
+        <i class='fa fa-fan fa-spin fa-fw'></i> 加入社区
+      </a>
+    </li>
+  
+        
+      
+        
+          <hr class="menuLoad-Content">
+        
+      
+        
+          
+    <li class="menuLoad-Content">
+      <a class='vlts-menu fix-cursor-default' href=https://github.com/volantis-x/volantis-docs/
+        
+        
+        
+        
+          id="https:githubcomvolantis-xvolantis-docs"
+        
+      >
+        <i class='fa fa-code-branch fa-fw'></i> 本站源码
+      </a>
+    </li>
+  
+        
+      
+        
+          
+    <li class="menuLoad-Content">
+      <a class='vlts-menu fix-cursor-default' href=https://github.com/volantis-x/hexo-theme-volantis/
+        
+        
+        
+        
+          id="https:githubcomvolantis-xhexo-theme-volantis"
+        
+      >
+        <i class='fa fa-code-branch fa-fw'></i> 主题源码
+      </a>
+    </li>
+  
+        
+      
+        
+          <hr class="menuLoad-Content">
+        
+      
+        
+          <li class='option menuOption-Content'>
+            <span class='vlts-menu opt fix-cursor-default' id='printHtml'>
+              <i class='fa fa-print fa-fw '></i> 打印页面
+            </span>
+          </li>
+        
+      
+        
+          <li class='option menuOption-Content'>
+            <span class='vlts-menu opt fix-cursor-default toggle-mode-btn' id='menuDarkBtn'>
+              <i class='fa fa-moon fa-fw '></i> 暗黑模式
+            </span>
+          </li>
+        
+      
+        
+          <li class='option menuOption-Content'>
+            <span class='vlts-menu opt fix-cursor-default' id='readingModel'>
+              <i class='fa fa-book-open fa-fw '></i> 阅读模式
+            </span>
+          </li>
+        
+      
+        
+          <div id="menuMusic">
+            <li class='music name menuOption-Content'>
+              <p class='nav music-title fix-cursor-default'></p>
+            </li>
+            <li class='music ctrl'>
+              <a class='nav icon-only backward fix-cursor-default' href="/" onclick="return false;" title="backward"><i class='fa fa-step-backward fa-fw'></i></a>
+              <a class='nav icon-only toggle fix-cursor-default' href="/" onclick="return false;" title="toggle"><i class='fa fa-play fa-fw'></i></a>
+              <a class='nav icon-only forward fix-cursor-default' href="/" onclick="return false;" title="forward"><i class='fa fa-step-forward fa-fw'></i></a>
+            </li>
+            <li class='music volume'>
+              <div class='nav volume'>
+                <div class="aplayer-volume-bar-wrap">
+                  <div class="aplayer-volume-bar fix-cursor-pointer">
+                    <div class="aplayer-volume"></div>
+                    <i class='left fa fa-volume-off fa-fw'></i>
+                    <i class='right fa fa-volume-up fa-fw'></i>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </div>
+        
+      
+    </ul>
+  </div>
+  <script>volantis.js('/js/plugins/rightMenu.d9437285.js')</script>
 
 
 
@@ -3297,6 +3470,82 @@ Qu...
 </script>
 
 
+
+
+  <script>
+  volantis.css("https://unpkg.com/volantis-static@0.0.1654736714924/libs/aplayer/dist/APlayer.min.css");
+  (async () => {
+    // APlayer 需要在  MetingJS 之前加载
+    await volantis.js("https://unpkg.com/volantis-static@0.0.1654736714924/libs/aplayer/dist/APlayer.min.js")
+    await volantis.js("https://unpkg.com/volantis-static@0.0.1654736714924/libs/meting/dist/Meting.min.js")
+  
+    // 右键 music 需要在 APlayer  MetingJS 之后加载
+    await volantis.js('/js/plugins/aplayer.dbe5eea9.js')
+  
+  })();
+
+  function SetAPlayerPlugin(){
+    let Metings = document.querySelectorAll('meting-js');
+    if (Metings.length === 0) {return;};
+    if (Metings[0].aplayer && Metings[0].aplayer.on) {
+      // improve the accessibility https://web.dev/button-name/
+      document.querySelectorAll(".aplayer-icon-menu").forEach(e=>{
+        e.setAttribute("aria-label","Aplayer Menu")
+      })
+      // message see: /layout/_plugins/message/script.ejs
+      
+        try {
+          setTimeout(() => {
+            Metings.forEach((item, index) => {
+              const aplayerItem = item.aplayer; if(!aplayerItem) return;
+              const rightAplayerCheck = 'true' === 'true'
+                && item.meta.id === '3175833810';
+              if(rightAplayerCheck) RightMenuAplayer.checkAPlayer();
+              if(aplayerItem.events.events.play.every(item => {return item.name !== 'messagePlay'})) {
+                aplayerItem.on('play', function messagePlay() {
+                  let index = aplayerItem.list.index;
+                  let title = aplayerItem.list.audios[index].title;
+                  let artist = aplayerItem.list.audios[index].artist;
+                  setTimeout(() => {
+                    VolantisApp.message('音乐通知', title + ' - ' + artist, {
+                      icon: 'fa-solid fa-play',
+                      transitionIn: 'flipInX',
+                      transitionOut: 'flipOutX'
+                    });
+                  }, 100)
+                });
+              }
+              if(aplayerItem.events.events.pause.every(item => {return item.name !== 'messagePause'})) {
+                aplayerItem.on('pause', function messagePause() {
+                  let index = aplayerItem.list.index;
+                  let title = aplayerItem.list.audios[index].title;
+                  let artist = aplayerItem.list.audios[index].artist;
+                  setTimeout(() => {
+                    // 歌曲播放结束也会触发 pause 事件，为了避免错误提示，等待一会儿
+                    if(aplayerItem.paused) {
+                      VolantisApp.message('音乐通知', title + ' - ' + artist, {
+                        icon: 'fa-solid fa-pause',
+                        transitionIn: 'flipInX',
+                        transitionOut: 'flipOutX'
+                      });
+                    }
+                  }, 100)
+                });
+              }
+            });
+          }, 500)
+        } catch (error) { console.error(error); }
+      
+    }else{
+      volantis.requestAnimationFrame(SetAPlayerPlugin)
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", ()=>{
+    SetAPlayerPlugin();
+  });
+  volantis.pjax.push(SetAPlayerPlugin);
+</script>
 
 
 
