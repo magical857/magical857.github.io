@@ -777,7 +777,7 @@ button {
 }
 @font-face {
   font-family: 'henry6';
-  src: url("/font/henry6/henry6.ttf");
+  src: url("source/font/henry6/henry6.ttf");
   font-weight: 'normal';
   font-style: 'normal';
   font-display: swap;
