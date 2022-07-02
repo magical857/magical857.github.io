@@ -1,20 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>AD学生认证</title>
-    <url>/2022/03/05/ad%E5%AD%A6%E7%94%9F%E8%AE%A4%E8%AF%81/</url>
-    <content><![CDATA[<h2 id="学生如何使用正版Altium-Designer软件；正版AD安装；AD如何使用正版license（适用于老师、学生、校友等等）"><a href="#学生如何使用正版Altium-Designer软件；正版AD安装；AD如何使用正版license（适用于老师、学生、校友等等）" class="headerlink" title="学生如何使用正版Altium Designer软件；正版AD安装；AD如何使用正版license（适用于老师、学生、校友等等）"></a>学生如何使用正版Altium Designer软件；正版AD安装；AD如何使用正版license（适用于老师、学生、校友等等）</h2><hr>
-<p><a href="https://blog.csdn.net/qq_41570901/article/details/121495124">点击此处查看</a></p>
-<hr>
-]]></content>
-      <categories>
-        <category>EDA</category>
-      </categories>
-      <tags>
-        <tag>AD</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>markDown学习总结</title>
     <url>/2022/05/25/MARKDOWN%E2%80%94%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/</url>
     <content><![CDATA[<h1 id="记录一下中午markDown语法的学习"><a href="#记录一下中午markDown语法的学习" class="headerlink" title="记录一下中午markDown语法的学习"></a>记录一下中午markDown语法的学习</h1><blockquote>
@@ -126,6 +112,20 @@
       </categories>
       <tags>
         <tag>嵌入式</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>AD学生认证</title>
+    <url>/2022/03/05/ad%E5%AD%A6%E7%94%9F%E8%AE%A4%E8%AF%81/</url>
+    <content><![CDATA[<h2 id="学生如何使用正版Altium-Designer软件；正版AD安装；AD如何使用正版license（适用于老师、学生、校友等等）"><a href="#学生如何使用正版Altium-Designer软件；正版AD安装；AD如何使用正版license（适用于老师、学生、校友等等）" class="headerlink" title="学生如何使用正版Altium Designer软件；正版AD安装；AD如何使用正版license（适用于老师、学生、校友等等）"></a>学生如何使用正版Altium Designer软件；正版AD安装；AD如何使用正版license（适用于老师、学生、校友等等）</h2><hr>
+<p><a href="https://blog.csdn.net/qq_41570901/article/details/121495124">点击此处查看</a></p>
+<hr>
+]]></content>
+      <categories>
+        <category>EDA</category>
+      </categories>
+      <tags>
+        <tag>AD</tag>
       </tags>
   </entry>
 </search>
