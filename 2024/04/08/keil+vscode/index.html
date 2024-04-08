@@ -5,8 +5,8 @@
   <meta name="Volantis" content="5.8.0">
   <meta charset="utf-8">
   <!-- SEO相关 -->
-  <meta name="robots" content="noindex,follow">
-  <link rel="canonical" href="https://magical857.github.io/archives/2024/02/"/>
+  
+  <link rel="canonical" href="https://magical857.github.io/2024/04/08/keil+vscode/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -34,15 +34,19 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>归档：2024/2 - Blog of Wenry6</title>
+  <title>vscode使用keil assistance插件无法转到函数定义问题 - Blog of Wenry6</title>
   <meta name="keywords" content="null">
   <meta desc name="description" content="Blog of Wenry6 - 长桦 - Blog of Wenry6">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Blog of Wenry6">
-<meta property="og:url" content="https://magical857.github.io/archives/2024/02/index.html">
+  
+<meta property="og:type" content="article">
+<meta property="og:title" content="vscode使用keil assistance插件无法转到函数定义问题">
+<meta property="og:url" content="https://magical857.github.io/2024/04/08/keil+vscode/index.html">
 <meta property="og:site_name" content="Blog of Wenry6">
+<meta property="og:description" content="前言本篇文章是记录一下vscode使用keil插件遇到的问题以及解决方式。 前情需要 vscode keil开发环境  问题简介按照一般步骤配置完vscode开发stm32单片机环境,打开工程进行编译没有问题但是却出现了右键无法跳转函数定义的情况，甚至没有Go defination  的选项。经过搜索发现是缺少了插件”c_cpp IntelliSense”,但添加插件后虽然有了选项但依旧无法跳转，">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+<meta property="article:published_time" content="2024-04-08T14:34:47.221Z">
+<meta property="article:modified_time" content="2024-04-08T14:57:17.932Z">
 <meta property="article:author" content="长桦">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
@@ -2288,7 +2292,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <!-- Custom Files bodyBegin end-->
     <!-- front-matter body_begin begin -->
     <!-- front-matter body_begin end -->
-    <header itemscope itemtype="http://schema.org/WPHeader" id="l_header" class="l_header auto shadow floatable blur " style='opacity: 0' >
+    <header itemscope itemtype="http://schema.org/WPHeader" id="l_header" class="l_header auto shadow floatable blur show" style='opacity: 0' >
   <div class='container'>
   <div id='wrapper'>
     <div class='nav-sub'>
@@ -2557,7 +2561,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
-      <div id="half" class='cover-wrapper  focus' style="display: ;">
+      <div id="none" class='cover-wrapper post focus' style="display: none;">
         
   <div id="parallax-window"></div>
 
@@ -2592,30 +2596,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <div class="body-wrapper">
           
 <div id="l_main" class=''>
-	
-		
-  <section class="post-list">
-    
-      
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-      
-    
-    
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://magical857.github.io/2024/02/18/SpringAlwaysNice/">
+  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
+  <link itemprop="mainEntityOfPage" href="https://magical857.github.io/2024/04/08/keil+vscode/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Blog of Wenry6">
   </span>
@@ -2624,381 +2606,238 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <meta itemprop="description" content="">
   </span>
   
-  
+
+
   
     <div class='headimg-div'>
-      <a class='headimg-a' href="/2024/02/18/SpringAlwaysNice/">
-        <img itemprop="image" class='headimg' alt="春江水暖鸭先知" src='https://ooo.0x0.ooo/2024/02/19/OyoODD.jpg'/>
+      <a class='headimg-a'>
+        <img itemprop="image" class='headimg' src='https://ooo.0x0.ooo/2024/04/08/OmvGlD.png'/>
       </a>
     </div>
   
-  
+  <div class="article-meta" id="top">
     
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2024/02/18/SpringAlwaysNice/"  itemprop="url">
-        春江水暖鸭先知
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
     
-      
-        无文淘气的小孩子
-
-一棵大树
-
-      
     
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
+      <h1 class="title" itemprop="name headline">
+        vscode使用keil assistance插件无法转到函数定义问题
+      </h1>
+      <div class='new-meta-box'>
         
           
-          <a class='avatar' target="_blank" rel="noopener" href='https://github.com/magical857'><img src='https://s2.loli.net/2024/02/04/Ti3KLH17XlbEChW.png'></a>
-          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <meta itemprop="image" content="https://s2.loli.net/2024/02/04/Ti3KLH17XlbEChW.png">
-            <meta itemprop="name" content="Wenry6">
-            <meta itemprop="url" content="https://github.com/magical857">
-          </span>
-        
-        <time itemprop="dateCreated datePublished" datetime="2024-02-18T20:23:42+08:00">2024-02-18</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/essays/">essays</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/essays/" itemprop="url"><span itemprop="name">essays</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2024/02/18/SpringAlwaysNice/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
+            
+<div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <a itemprop="url" class='author' target="_blank" href="https://github.com/magical857" rel="nofollow noopener">
+    <img itemprop="image" src="https://s2.loli.net/2024/02/04/Ti3KLH17XlbEChW.png" class="lazyload" data-srcset="https://s2.loli.net/2024/02/04/Ti3KLH17XlbEChW.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+    <p itemprop="name">Wenry6</p>
+  </a>
 </div>
 
-          </div>
+          
         
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://magical857.github.io/2024/02/13/枕刀歌第二季/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Blog of Wenry6">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Blog of Wenry6">
-    <meta itemprop="description" content="">
-  </span>
-  
-  
-  
-    <div class='headimg-div'>
-      <a class='headimg-a' href="/2024/02/13/%E6%9E%95%E5%88%80%E6%AD%8C%E7%AC%AC%E4%BA%8C%E5%AD%A3/">
-        <img itemprop="image" class='headimg' alt="⌜荡天下、净山河、定苍生⌟" src='https://ooo.0x0.ooo/2024/02/13/Ov2dfp.png'/>
-      </a>
-    </div>
-  
-  
+          
+            
+  <div class='new-meta-item category'>
+    <i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i>
+    <a class="category-link" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a>
     
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2024/02/13/%E6%9E%95%E5%88%80%E6%AD%8C%E7%AC%AC%E4%BA%8C%E5%AD%A3/"  itemprop="url">
-        ⌜荡天下、净山河、定苍生⌟
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        前言今天是《枕刀歌》第二季完结撒花，最后一集时长感人从第一季开始就喜欢这部动漫，第二季质量依旧很高，值得纪念（水文章😁）。
-你的路，听你的《枕刀歌》中的每个人物基本都刻画的有血有肉，不论是正派、反派，其实并没有严格意义上的正反派，归根结底只是性格和执念不同罢了。就好像，我一开始看完就有想分享到社交平台朋友圈之类，但我心里又不愿透露这些或者是与这些好友分享，因为我觉得没必要，归根结底还是我认...
-      
+      <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+        <a href="/categories/%E6%8A%80%E6%9C%AF/" itemprop="url"><span itemprop="name">技术</span></a>
+      </span>
     
   </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-          
-          <a class='avatar' target="_blank" rel="noopener" href='https://github.com/magical857'><img src='https://s2.loli.net/2024/02/04/Ti3KLH17XlbEChW.png'></a>
-          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <meta itemprop="image" content="https://s2.loli.net/2024/02/04/Ti3KLH17XlbEChW.png">
-            <meta itemprop="name" content="Wenry6">
-            <meta itemprop="url" content="https://github.com/magical857">
-          </span>
-        
-        <time itemprop="dateCreated datePublished" datetime="2024-02-13T20:11:44+08:00">2024-02-13</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E8%A7%82%E6%84%9F/">观感</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E8%A7%82%E6%84%9F/" itemprop="url"><span itemprop="name">观感</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2024/02/13/%E6%9E%95%E5%88%80%E6%AD%8C%E7%AC%AC%E4%BA%8C%E5%AD%A3/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
 
+
+          
+        
+          
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2024-04-08T22:34:47+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：2024年4月8日</p>
+  </a>
 </div>
 
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://magical857.github.io/2024/02/11/人生的智慧/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Blog of Wenry6">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Blog of Wenry6">
-    <meta itemprop="description" content="">
-  </span>
-  
-  
-  
-    <div class='headimg-div'>
-      <a class='headimg-a' href="/2024/02/11/%E4%BA%BA%E7%94%9F%E7%9A%84%E6%99%BA%E6%85%A7/">
-        <img itemprop="image" class='headimg' alt="人生的智慧" src='https://ooo.0x0.ooo/2024/02/13/Ov2pks.jpg'/>
-      </a>
-    </div>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2024/02/11/%E4%BA%BA%E7%94%9F%E7%9A%84%E6%99%BA%E6%85%A7/"  itemprop="url">
-        人生的智慧
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        前言一个年轻的小伙由于乘火车回家无聊打发时间，突发奇想，想读读书于是在知乎上找到一篇推荐人生必读书目，此时的年轻人还没意识到这本书是如此的脍炙人口。以上就是读此书的由来，实在是没有想到，一个没看完几本书的，居然在几周内把这部哲学书从头到尾看完了。更令人振奋的事是这本书写的真好，毫不吝啬的把人生的淋漓尽致的全方位的展现出来，并且作者没有那种文学大咖的调调，全文通俗易懂，当然我看的并不是原著而是...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-          
-          <a class='avatar' target="_blank" rel="noopener" href='https://github.com/magical857'><img src='https://s2.loli.net/2024/02/04/Ti3KLH17XlbEChW.png'></a>
-          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <meta itemprop="image" content="https://s2.loli.net/2024/02/04/Ti3KLH17XlbEChW.png">
-            <meta itemprop="name" content="Wenry6">
-            <meta itemprop="url" content="https://github.com/magical857">
-          </span>
-        
-        <time itemprop="dateCreated datePublished" datetime="2024-02-11T20:38:18+08:00">2024-02-11</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E9%98%85%E6%84%9F/">阅感</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E9%98%85%E6%84%9F/" itemprop="url"><span itemprop="name">阅感</span></a>
-            </span>
           
         
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2024/02/11/%E4%BA%BA%E7%94%9F%E7%9A%84%E6%99%BA%E6%85%A7/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://magical857.github.io/2024/02/06/队列算法应用之串口/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Blog of Wenry6">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Blog of Wenry6">
-    <meta itemprop="description" content="">
-  </span>
-  
-  
-  
-    <div class='headimg-div'>
-      <a class='headimg-a' href="/2024/02/06/%E9%98%9F%E5%88%97%E7%AE%97%E6%B3%95%E5%BA%94%E7%94%A8%E4%B9%8B%E4%B8%B2%E5%8F%A3/">
-        <img itemprop="image" class='headimg' alt="队列算法应用之串口" src='https://s2.loli.net/2024/02/06/Qipnb25GJk67hlr.png'/>
-      </a>
-    </div>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2024/02/06/%E9%98%9F%E5%88%97%E7%AE%97%E6%B3%95%E5%BA%94%E7%94%A8%E4%B9%8B%E4%B8%B2%E5%8F%A3/"  itemprop="url">
-        队列算法应用之串口
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        前言最近学明白了一个比较实用的队列算法在串口通信方面的应用，记录一下。
-本文开发环境
-            IAR IDE
+          
             
 
-            STM8L101F3、STlink、USB串口
-            
-软件配置1.串口基础配置创建hal_usart.c进行串口配置，从规格书来看，STM8L101F3只有一个串口，串口的配置按照官方给的函数st...
-      
+
+
+          
+        
+        <!-- Custom Files topMeta begin-->
+        
+        <!-- Custom Files topMeta end-->
+      </div>
     
   </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-          
-          <a class='avatar' target="_blank" rel="noopener" href='https://github.com/magical857'><img src='https://s2.loli.net/2024/02/04/Ti3KLH17XlbEChW.png'></a>
-          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <meta itemprop="image" content="https://s2.loli.net/2024/02/04/Ti3KLH17XlbEChW.png">
-            <meta itemprop="name" content="Wenry6">
-            <meta itemprop="url" content="https://github.com/magical857">
-          </span>
-        
-        <time itemprop="dateCreated datePublished" datetime="2024-02-06T20:12:33+08:00">2024-02-06</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E6%8A%80%E6%9C%AF/" itemprop="url"><span itemprop="name">技术</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2024/02/06/%E9%98%9F%E5%88%97%E7%AE%97%E6%B3%95%E5%BA%94%E7%94%A8%E4%B9%8B%E4%B8%B2%E5%8F%A3/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
 
-</div>
 
+  <div id="layoutHelper-page-plugins"></div>
+  <div id="post-body" itemprop="articleBody">
+    <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>本篇文章是记录一下vscode使用keil插件遇到的问题以及解决方式。</p>
+<h2 id="前情需要"><a href="#前情需要" class="headerlink" title="前情需要"></a>前情需要</h2><ul>
+<li>vscode</li>
+<li>keil开发环境</li>
+</ul>
+<h2 id="问题简介"><a href="#问题简介" class="headerlink" title="问题简介"></a>问题简介</h2><p>按照<a target="_blank" rel="noopener" href="http://t.csdnimg.cn/tGnoL">一般步骤</a>配置完vscode开发stm32单片机环境,打开工程进行编译没有问题但是却出现了右键无法跳转函数定义的情况，甚至没有<code>Go defination </code> 的选项。经过搜索发现是缺少了插件”c_cpp IntelliSense”,但添加插件后虽然有了选项但依旧无法跳转，该有的路径已经添加了。</p>
+<h2 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h2><p>参照<a target="_blank" rel="noopener" href="https://www.cnblogs.com/futurelearning/p/16477763.html">问题二</a>在<code>settings.json </code>中添加如下两行配置解决问题</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">C_Cpp.<span class="property">intelliSenseEngineFallback</span><span class="string">&quot;: &quot;</span><span class="title class_">Disabled</span></span><br><span class="line">C_Cpp.<span class="property">intelliSenseEngine</span><span class="string">&quot;: &quot;</span><span class="title class_">Tag</span> <span class="title class_">Parser</span><span class="string">&quot; </span></span><br></pre></td></tr></table></figure>
+
+<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>不得不说哈是非常喜欢vscode进行编程。</p>
+
+  </div>
+  
+  
+    
+    <div class='footer'>
+       <!-- 参考资料、相关资料等 -->
+      
+       <!-- 相关文章 -->
+      
+      <!-- 版权声明组件 -->
+      
+        
+          <div class='copyright'>
+            <blockquote>
+              
+                
+                  <p>博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</p>
+
+                
+              
+                
+                  <p>本文永久链接是：<a href="https://magical857.github.io/2024/04/08/keil+vscode/">https://magical857.github.io/2024/04/08/keil+vscode/</a></p>
+                
+              
+            </blockquote>
           </div>
         
       
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://magical857.github.io/2024/02/03/hello-world/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Blog of Wenry6">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Blog of Wenry6">
-    <meta itemprop="description" content="">
-  </span>
-  
-  
-  
-    <div class='headimg-div'>
-      <a class='headimg-a' href="/2024/02/03/hello-world/">
-        <img itemprop="image" class='headimg' alt="Hello World" src='https://s2.loli.net/2024/02/04/kFCBRcv9g6rafJb.jpg'/>
-      </a>
+      <!-- 打赏组件 -->
+      
     </div>
   
   
     
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2024/02/03/hello-world/"  itemprop="url">
-        Hello World
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
+
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2024-04-08T22:57:17+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：2024年4月8日</p>
+  </a>
+</div>
+
+        
+      
+        
+          
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
     
       
-        Welcome to Hexo! Welcome to Wenry6’blog!第二句是我仿着hexo原生的那篇《Hello World》写的，然后我把后面的全删了并把这篇文章作为Blog的开篇之作。感觉这样比较有继承或者说传承的感觉，哈哈。在这里许个愿吧，希望我能好好坚持写作的习惯。
-为什么用Blog其实我在几年前就尝试打一个属于自己的Blog，那个时候的我就觉得这些东西很新奇，自己也挺感...
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://magical857.github.io/2024/04/08/keil+vscode/&title=vscode使用keil assistance插件无法转到函数定义问题 - Blog of Wenry6&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qq.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qq.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://magical857.github.io/2024/04/08/keil+vscode/&title=vscode使用keil assistance插件无法转到函数定义问题 - Blog of Wenry6&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qzone.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qzone.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://magical857.github.io/2024/04/08/keil+vscode/&title=vscode使用keil assistance插件无法转到函数定义问题 - Blog of Wenry6&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/weibo.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/weibo.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+    
       
     
   </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
+</div>
+
+
+
         
-          
-          <a class='avatar' target="_blank" rel="noopener" href='https://github.com/magical857'><img src='https://s2.loli.net/2024/02/04/Ti3KLH17XlbEChW.png'></a>
-          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <meta itemprop="image" content="https://s2.loli.net/2024/02/04/Ti3KLH17XlbEChW.png">
-            <meta itemprop="name" content="Wenry6">
-            <meta itemprop="url" content="https://github.com/magical857">
-          </span>
-        
-        <time itemprop="dateCreated datePublished" datetime="2024-02-03T20:30:01+08:00">2024-02-03</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/essays/">essays</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/essays/" itemprop="url"><span itemprop="name">essays</span></a>
-            </span>
-          
-        
-      </div>
       
-        <div>
-          <a class='readmore' href='/2024/02/03/hello-world/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
+    </div>
+    <!-- Custom Files bottomMeta begin -->
+    
+    <!-- Custom Files bottomMeta end -->
+  </div>
+
+
+  
+  
+
+  
+    <div class="prev-next">
+      
+      
+        <a class='next' href='/2024/03/13/%E5%B9%B3%E4%BB%84/'>
+          <p class='title'>独一份的平仄<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>前言音乐家Henry LAU（中文名：刘宪华）是我在大学时期喜欢的一名音乐偶像，他吸引我的地方不仅是他那精湛的琴艺，更重要的是他的品性。有时间单独开个专题聊聊他吧。前段时间在看大华和雅姐录制的广...</p>
+        </a>
       
     </div>
   
-
-</div>
-
-          </div>
-        
-      
-    
-  </section>
+  <!-- Custom Files postEnd begin-->
   
-    
+  <!-- Custom Files postEnd end-->
+</article>
+
+
+  
+
   
 
 
-	
+
+
+
 </div>
 <aside id='l_side' itemscope itemtype="http://schema.org/WPSideBar">
+  
+
+  
+    
+    
+      
+    
   
 
   
@@ -3071,115 +2910,45 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
   
 
+
+<div class="widget-sticky pjax">
+
   
-    
-    
-      
   
-  <section class="widget category desktop pjax">
+
+
+  <section class="widget toc-wrapper desktop mobile " id="toc-div" >
     
   <header>
     
-      <a href='/blog/categories/'><i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>文章分类</span></a>
+      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
     
   </header>
 
 
     <div class='content'>
-      <ul class="entry navigation">
-        
-          <li><a class="flat-box"
-            title="/categories/essays/" href="/categories/essays/"
-            active-action="action-categoriesessays"
-            ><div class='name'>essays</div><div class='badge'>(2)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E6%8A%80%E6%9C%AF/" href="/categories/%E6%8A%80%E6%9C%AF/"
-            active-action="action-categoriesE68A80E69CAF"
-            ><div class='name'>技术</div><div class='badge'>(2)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E8%A7%82%E6%84%9F/" href="/categories/%E8%A7%82%E6%84%9F/"
-            active-action="action-categoriesE8A782E6849F"
-            ><div class='name'>观感</div><div class='badge'>(2)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E9%98%85%E6%84%9F/" href="/categories/%E9%98%85%E6%84%9F/"
-            active-action="action-categoriesE99885E6849F"
-            ><div class='name'>阅感</div><div class='badge'>(1)</div></a></li>
-        
-      </ul>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-text">前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%8D%E6%83%85%E9%9C%80%E8%A6%81"><span class="toc-text">前情需要</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%97%AE%E9%A2%98%E7%AE%80%E4%BB%8B"><span class="toc-text">问题简介</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95"><span class="toc-text">解决方法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%93%E8%AF%AD"><span class="toc-text">结语</span></a></li></ol>
     </div>
   </section>
 
-
-    
   
-
-  
-    
-    
-      
-
-    
-  
-
-  
-    
-    
-      
-<section class="widget desktop pjax">
-  
-  <header>
-    
-      <i class="fa-solid fa-award fa-fw" aria-hidden="true"></i><span class='name'>站点信息</span>
-    
-  </header>
-
-
-  <div class='content'>
-    <div class="webinfo">
-      
-        <div class="webinfo-item">
-          <div>文章数目：</div>
-          <div>7 篇</div>
-        </div>
-      
-
-      
-        <div class="webinfo-item">
-          <div>已运行时间：</div>
-          <div id="webinfo-runtime-count"></div>
-        </div>
-      
-
-
-      
-
-      
-
-      
-
-      
-        <div class="webinfo-item">
-          <div>最后活动时间：</div>
-          <div id="last-update-show">2024-04-08 日</div>
-        </div>
-      
-    </div>
-  </div>
-</section>
-
-    
-  
-
-
-<div class="widget-sticky pjax">
 
 </div>
 
 
 <!-- 没有 pjax 占位会报错 万恶的 pjax -->
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
 
   <div class="pjax">
     <!-- pjax占位 -->
@@ -3203,13 +2972,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </aside>
 
 
+
           <!--此文件用来存放一些不方便取值的变量-->
 <!--思路大概是将值藏到重加载的区域内-->
 
 <pjax>
 <script>
   window.pdata={}
-  pdata.ispage=false;
+  pdata.ispage=true;
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -3218,14 +2988,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     // header
     var l_header=document.getElementById("l_header");
     
-    l_header.classList.remove("show");
+    l_header.classList.add("show");
     
     
       // cover
       var cover_wrapper=document.querySelector('#l_cover .cover-wrapper');
       var scroll_down=document.getElementById('scroll-down');
-      cover_wrapper.id="half";
-      cover_wrapper.style.display="";
+      cover_wrapper.id="none";
+      cover_wrapper.style.display="none";
       scroll_down.style.display="none";
     
   
@@ -4110,6 +3880,25 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 <!-- pjax 标签必须存在于所有页面 否则 pjax error -->
 <pjax>
 
+        <style>
+  #post-body p {
+    text-indent: 2em;
+  }
+  #post-body .new-meta-box p,
+  #post-body .note p,
+  #post-body .prev-next p,
+  #post-body .tag p,
+  #post-body blockquote p,
+  #post-body details p,
+  #post-body p.p,
+  #post-body .tab-pane .checkbox
+  #post-body section p {
+    text-indent: initial;
+  }
+</style>
+
+
+
 </pjax>
 
 <script>
@@ -4241,7 +4030,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Blog of Wenry6","url":"https://magical857.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"长桦","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://magical857.github.io/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://magical857.github.io/","name":"Blog of Wenry6"}},{"@type":"ListItem","position":2,"item":{"@id":"https://magical857.github.io/archives/","name":"Archive"}},{"@type":"ListItem","position":3,"item":{"@id":"https://magical857.github.io/archives/2024/","name":"2024年"}},{"@type":"ListItem","position":4,"item":{"@id":"https://magical857.github.io/archives/2024/2/","name":"2月"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Blog of Wenry6","url":"https://magical857.github.io/","keywords":null,"description":"","author":{"@type":"Person","name":"长桦","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://magical857.github.io/","description":""},"publisher":{"@type":"Organization","name":"Blog of Wenry6","url":"https://magical857.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://magical857.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"","inLanguage":["zh-CN","en","default"],"mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"长桦","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://magical857.github.io/"},"publisher":{"@type":"Organization","name":"Blog of Wenry6","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Blog of Wenry6","url":"https://magical857.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"长桦","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://magical857.github.io/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://magical857.github.io/","name":"Blog of Wenry6"}},{"@type":"ListItem","position":2,"item":{"@id":"https://magical857.github.io/categories/技术/","name":"技术"}},{"@type":"ListItem","position":3,"item":{"@id":"https://magical857.github.io/2024/04/08/keil+vscode/","name":"vscode使用keil assistance插件无法转到函数定义问题"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Blog of Wenry6","url":"https://magical857.github.io/","keywords":null,"description":"","author":{"@type":"Person","name":"长桦","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://magical857.github.io/","description":""},"publisher":{"@type":"Organization","name":"Blog of Wenry6","url":"https://magical857.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://magical857.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"vscode使用keil assistance插件无法转到函数定义问题","description":"","inLanguage":["zh-CN","en","default"],"mainEntityOfPage":{"@type":"WebPage","@id":"https://magical857.github.io/2024/04/08/keil+vscode/"},"author":{"@type":"Person","name":"长桦","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://magical857.github.io/"},"publisher":{"@type":"Organization","name":"Blog of Wenry6","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://magical857.github.io/2024/04/08/keil+vscode/","wordCount":0,"datePublished":"2024-04-08T14:34:47.221Z","dateModified":"2024-04-08T14:57:17.932Z","articleSection":"技术","image":{"@type":"ImageObject","url":"https://ooo.0x0.ooo/2024/04/08/OmvGlD.png","width":1024,"height":768}}]</script>
 
 
 
