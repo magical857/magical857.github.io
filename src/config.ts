@@ -57,7 +57,7 @@ export const profileConfig: ProfileConfig = {
   links: [
     {
       name: 'email',
-      icon: 'fa6-brands:email',
+      icon: 'fa6-brands:twitter',
       url: '3245798781@qq.com',
     },
     {
