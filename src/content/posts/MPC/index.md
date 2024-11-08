@@ -1,6 +1,6 @@
 ---
 title: MPC simple learn
-published: 2024-11-06
+published: 2024-8-06
 description: 'Just talk about simple MPC'
 image: './MPC.png'
 tags: [MPC,]
