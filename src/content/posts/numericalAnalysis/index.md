@@ -5,7 +5,7 @@ description: 'principles and realization of numerical analysis'
 image: '/imgs/NA.png'
 tags: [numerical analysis,math]
 category: 'technology'
-draft: true 
+draft: false 
 lang: 'en'
 ---
 # Preface
