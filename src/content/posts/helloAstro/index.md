@@ -3,8 +3,8 @@ title: Hello! Astro
 published: 2024-11-06
 description: 'Just talk about some reasons that the blog has been built'
 image: './helloAstro.png'
-tags: []
-category: ''
+tags: [life]
+category: 'blog'
 draft: false 
 lang: 'en'
 ---
