@@ -1,6 +1,6 @@
 ---
 title: MPC simple learn
-published: 2024-8-06
+published: 2024-08-06
 description: 'MPC realization with ipopt'
 image: './MPC.png'
 tags: [MPC,]
