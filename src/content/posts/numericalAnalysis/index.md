@@ -62,4 +62,8 @@ y_0\\y_1\\y_2\\\vdots\\y_n
 \end{bmatrix}
 $$
 
-the Eq.(1-1)
+the Eq.(1-1) can be rewritten,
+$$
+Ax=b
+$$
+A is denoted the 
