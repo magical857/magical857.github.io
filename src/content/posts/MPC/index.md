@@ -44,34 +44,32 @@ lang: 'zh-CN'
     参考[文章分析](https://blog.csdn.net/qq_42258099/article/details/95353986)，可以得到最终的状态方程（模型状态等式约束方程组）：
     $$
     \begin{aligned}
-                \begin{cases}
-                    x_{t+1} &= x_t+v_t*cos(\varphi_t)*dt \\
-                    y_{t+1} &= y_t+v_t*sin(\varphi_t)*dt \\
-                    \varphi_{t+1} &= \varphi_t+\dfrac{v_t}{L_f}*\delta_t*dt \\
-                    v_{t+1}&=v_t+a_t*dt\\
-                    cte_{t+1}&=f(x_t) - y_t +v_t*sin(e\varphi_t)*dt\\
-                    e\varphi_t+1 &=\varphi_t - \varphi des_t +\dfrac{v_t}{L_f}*\delta_t*dt
-                \end{cases}
-            
+    \begin{cases}
+    x_{t+1} &= x_t+v_t*cos(\varphi_t)*dt \\
+    y_{t+1} &= y_t+v_t*sin(\varphi_t)*dt \\
+    \varphi_{t+1} &= \varphi_t+\dfrac{v_t}{L_f}*\delta_t*dt \\
+    v_{t+1}&=v_t+a_t*dt\\
+    cte_{t+1}&=f(x_t) - y_t +v_t*sin(e\varphi_t)*dt\\
+    e\varphi_t+1 &=\varphi_t - \varphi des_t +\dfrac{v_t}{L_f}*\delta_t*dt
+    \end{cases}
     \end{aligned}
     $$ 
     
     目标函数：
 
-     $$\begin{split}
-                    J &= \sum_{i=0}^{N-1} \left[ 2500(cte_i - ref\_cte)^2 + 2500(\varphi_i - ref\_\varphi)^2 + (v_i - ref\_v)^2 \right]\\
-                    &+ \sum_{i=0}^{N-2} \left[ 5(\delta_i)^2 + 100(a_i)^2 + 700(\delta_i \cdot v_i)^2 \right]\\
-                    &+ \sum_{i=0}^{N-3} \left[ 200(\delta_{i+1} - \delta_i)^2 + 10(a_{i+1} - a_i)^2 \right]
-                    \end{split}$$ 
+    $$\begin{split}
+    J &= \sum_{i=0}^{N-1} \left[ 2500(cte_i - ref\_cte)^2 + 2500(\varphi_i - ref\_\varphi)^2 + (v_i - ref\_v)^2 \right]\\
+    &+ \sum_{i=0}^{N-2} \left[ 5(\delta_i)^2 + 100(a_i)^2 + 700(\delta_i \cdot v_i)^2 \right]\\
+    &+ \sum_{i=0}^{N-3} \left[ 200(\delta_{i+1} - \delta_i)^2 + 10(a_{i+1} - a_i)^2 \right]
+    \end{split}
+    $$ 
     其中的权重系数可以任意修改。物理约束条件： 
 
     $$
-    \begin{aligned}
-                \begin{cases}
-                    \varphi \in [-25^\circ,25^\circ]\\
-                    a \in [-1,1]
-                \end{cases}
-    \end{aligned}
+    \begin{cases}
+    \varphi \in [-25^\circ,25^\circ]\\
+    a \in [-1,1]
+    \end{cases}
     $$
 
 3.  代码分析:
