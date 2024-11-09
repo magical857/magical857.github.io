@@ -81,12 +81,12 @@ lang: 'zh-CN'
     1.  创建函数对象FG_eval也就是FG_eval类定义了operator()运算符，该运算符接受两个参数：ADvector&fg和const
         ADvector
         &vars，在这个运算符中，对如下形式的目标函数和约束条件进行操作
-        $$\begin{aligned}
-                \text{minimize} \quad & f(x) \\
-                \text{subject to} \quad & gl \leq g(x) \leq gu \\
-                                          & xl \leq x \leq xu
-                
-        \end{aligned}$$
+        $$
+        \begin{aligned}
+            \text{minimize} \quad & f(x) \\
+            \text{subject to} \quad & gl \leq g(x) \leq gu \\& xl \leq x \leq xu
+        \end{aligned}
+        $$
         并存储在fg中。值得一提的是代码中的g(x)是前面提到的等式约束方程组。
 
     2.  设置约束条件范围

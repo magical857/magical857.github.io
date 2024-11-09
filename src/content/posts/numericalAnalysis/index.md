@@ -66,4 +66,4 @@ the Eq.(1-1) can be rewritten,
 $$
 Ax=b
 $$
-A is denoted the 
+A is denoted the vandermonde determinant
