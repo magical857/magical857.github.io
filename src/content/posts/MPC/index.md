@@ -56,12 +56,10 @@ lang: 'zh-CN'
     $$ 
     
     目标函数：
-
-    $$\begin{split}
-    J &= \sum_{i=0}^{N-1} \left[ 2500(cte_i - ref\_cte)^2 + 2500(\varphi_i - ref\_\varphi)^2 + (v_i - ref\_v)^2 \right]\\
-    &+ \sum_{i=0}^{N-2} \left[ 5(\delta_i)^2 + 100(a_i)^2 + 700(\delta_i \cdot v_i)^2 \right]\\
-    &+ \sum_{i=0}^{N-3} \left[ 200(\delta_{i+1} - \delta_i)^2 + 10(a_{i+1} - a_i)^2 \right]
-    \end{split}
+    $$
+    J = \sum_{i=0}^{N-1} \left[ 2500(cte_i - ref\_cte)^2 + 2500(\varphi_i - ref\_\varphi)^2 + (v_i - ref\_v)^2 \right]\\
+    + \sum_{i=0}^{N-2} \left[ 5(\delta_i)^2 + 100(a_i)^2 + 700(\delta_i \cdot v_i)^2 \right]\\
+    + \sum_{i=0}^{N-3} \left[ 200(\delta_{i+1} - \delta_i)^2 + 10(a_{i+1} - a_i)^2 \right]
     $$ 
     其中的权重系数可以任意修改。物理约束条件： 
 
