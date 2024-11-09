@@ -48,11 +48,11 @@ subsequently,the matrix $A$ and vector $x$ and $b$ can be expressed by,
 $$
 A=
 \begin{bmatrix}
-1&x_0&x_1^2&x_2^3&\cdots&x_n^n\\
-1&x_0&x_1^2&x_2^3&\cdots&x_n^n\\
-1&x_0&x_1^2&x_2^3&\cdots&x_n^n\\
+1&x_0&x_0^2&x_0^3&\cdots&x_0^n\\
+1&x_1&x_1^2&x_1^3&\cdots&x_1^n\\
+1&x_2&x_2^2&x_2^3&\cdots&x_2^n\\
 \vdots&\vdots&\vdots&\vdots&\vdots&\vdots \\
-1&x_0&x_1^2&x_2^3&\cdots&x_n^n\\
+1&x_n&x_n^2&x_n^3&\cdots&x_n^n\\
 \end{bmatrix},
 x=\begin{bmatrix}
 a_0\\a_1\\a_2\\\vdots\\a_n
@@ -66,4 +66,12 @@ the Eq.(1-1) can be rewritten,
 $$
 Ax=b
 $$
-A is denoted the vandermonde determinant
+A is denoted the vandermonde determinant which has an important property,
+$$ 
+det(A)=det(A^T)=\prod\limits^{n}_{0\leq i<j\leq n}(x_j-x_i)
+$$
+the det is not equal to zero beacuse that all valriables are different each other. As mentioned above, We can say that $n+1$ 
+different points can determine an unique n order polynomial curve.
+
+### realization of python
+
