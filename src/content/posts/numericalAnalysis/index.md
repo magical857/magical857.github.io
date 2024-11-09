@@ -41,7 +41,7 @@ a_0+a_1*x_2+a_2*x_2^2 + a_3*x_2^3+...+a_n*x_2^n=y_2\\
 \quad \vdots \quad \qquad \quad \qquad \qquad \qquad \qquad \qquad\qquad \qquad \quad\vdots  \\
 a_0+a_1*x_n+a_2*x_n^2 + a_3*x_n^3+...+a_n*x_n^n=y_n\\
 \end{cases}
-\tag{1}
+\tag{1-1}
 $$
 subsequently,the matrix $A$ and vector $x$ and $b$ can be expressed by,
 
@@ -62,4 +62,4 @@ y_0\\y_1\\y_2\\\vdots\\y_n
 \end{bmatrix}
 $$
 
-the Eq.
+the Eq.(1-1)

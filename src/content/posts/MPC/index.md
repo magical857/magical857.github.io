@@ -29,8 +29,7 @@ lang: 'zh-CN'
 
 -   实现功能：给定参考轨迹，小车通过MPC算法跟踪轨迹，绘制轨迹跟踪动态图以及状态变量曲线图。
 
--   参考项目：https://github.com/rising-turtle/SelfDriving.git[]{#reference
-    label="reference"}
+-   参考项目：https://github.com/rising-turtle/SelfDriving.git
 
 -   编程语言：C++
 
