@@ -14,7 +14,7 @@ The article intend to record the theory of lagrange interpolation and its realiz
 
 ---
 
-## lagerange interpolation method
+## lagrange interpolation method
 
 Defination of the lagrange interpolation method is that the number of points which are different can fit the polynomial curve. As we all know that the stright line can be fitted with two different points. So the defination is reasonable intuitively. Let us proof it.
 
@@ -39,7 +39,7 @@ a_0+a_1*x_2+a_2*x_2^2 + a_3*x_2^3+...+a_n*x_2^n=y_2\\
 \quad \vdots \quad \qquad \quad \qquad \qquad \qquad \qquad \qquad\qquad \qquad \quad\vdots  \\
 a_0+a_1*x_n+a_2*x_n^2 + a_3*x_n^3+...+a_n*x_n^n=y_n\\
 \end{cases}
-\tag{1-1}
+\tag{1}
 $$
 subsequently,the matrix $A$ and vector $x$ and $b$ can be expressed by,
 
@@ -70,6 +70,20 @@ det(A)=det(A^T)=\prod\limits^{n}_{0\leq i<j\leq n}(x_j-x_i)
 $$
 the det is not equal to zero beacuse that all valriables are different each other. As mentioned above, We can say that $n+1$ 
 different points can determine an unique n order polynomial curve.
+## lagrange remainder
 
-### realization of python
+To be honisted, whatever you had many points about any curve, it it is believed that always contains the error between the ploynomial and the real part. And then we can define the error by,
+
+$$ 
+R_n(x)=f(x)-L_n(x)
+\tag{2}
+$$
+
+where $L_n(x)$ is the ploynomial curve , $f(x)$ is the real part of the curve and $R_n(x)$ is the remainder of the curve.It seems very reasonable to define the error function. And the formation of the error function is determined,
+
+$$
+R_n(x)=\frac{f^{(n+1)}(\epsilon)}{(n+1)!}(x-x_0)(x-x_1)\dots(x-x_n)\quad,\epsilon\in[x_0,x_n]
+$$
+this can be proofed by Rolle's theorem.
+## realization of python
 
