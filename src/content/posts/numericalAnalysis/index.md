@@ -1,8 +1,8 @@
 ---
-title: Numerical Analysis 
+title: Lagrange Interpolation
 published: 2024-11-08
-description: 'principles and realization of numerical analysis'
-image: '/imgs/NA.png'
+description: 'principles and realization of lagrange interpolation'
+image: '/imgs/numerical analysis/Lagrange_polynomial.svg'
 tags: [numerical analysis,math]
 category: 'technology'
 draft: false 
@@ -10,15 +10,13 @@ lang: 'en'
 ---
 # Preface
 
-The article includes many articles to record the theory of numerical analysis and its realizations of python.
+The article intend to record the theory of lagrange interpolation and its realizations of python.
 
 ---
 
-# interpolation methods
-
 ## lagerange interpolation method
 
-Defination of the lagerange interpolation method is that the number of points which are different can fit the polynomial curve. As we all know that the stright line can be fitted with two different points. So the defination is reasonable intuitively. Let us proof it.
+Defination of the lagrange interpolation method is that the number of points which are different can fit the polynomial curve. As we all know that the stright line can be fitted with two different points. So the defination is reasonable intuitively. Let us proof it.
 
 Ploynomial curve $L_n(x)$ can be presented as follow:
 
