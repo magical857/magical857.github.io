@@ -60,7 +60,7 @@ y_0\\y_1\\y_2\\\vdots\\y_n
 \end{bmatrix}
 $$
 
-the Eq.(1-1) can be rewritten,
+the Eq.(1) can be rewritten,
 $$
 Ax=b
 $$
