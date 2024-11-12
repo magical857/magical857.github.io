@@ -2,7 +2,7 @@
 title: Dialectics Of Nature
 published: 2024-11-12
 description: 'FZU自然辩证法重点'
-image: '/images/zrbzf.png'
+image: '/imgs/zrbzf.png'
 tags: [generalcourse]
 category: 'exam'
 draft: false 
