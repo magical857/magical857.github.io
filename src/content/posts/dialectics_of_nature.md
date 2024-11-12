@@ -1,5 +1,5 @@
 ---
-title: dialectics_of_nature.md
+title: Dialectics Of Nature
 published: 2024-11-12
 description: 'FZU自然辩证法重点'
 image: '/images/zrbzf.png'
