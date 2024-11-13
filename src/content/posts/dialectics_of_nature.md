@@ -900,3 +900,13 @@ b. **动力：**
 马太效应的运行往往会造成一批"获奖专业户"和"课题专业户"，获奖太多，奖励往往会失去其应有的激励作用；"课题专业户"课题项目之多，以致没有时间与精力去作深入研究，从而造成科研资源的浪费。**马太效应的运行最后导致学术权威的形成，形成一定程度的垄断。**
 由于学术权威们居高临下，他们拥有对他人学术成果评价和科研立项的评审的大权，愈出名的权威愈容易申请到科研经费和基金，而且也愈有机会评审他人的成果。这就给权威压制无名后辈创造了条件。**不利于学术民主的发扬，有碍学术创新的进展。**
 学术上的这种积累效应，容易使人们造成对"权威"们的盲目崇拜，从而把对科学成果的承认和评价演变为对人的承认。这种现象不利于科学成果的公正评价，致使一些有新意的学术成果难以脱颖而出。
+---
+## reference
+* https://github.com/tyckennethzhang537/SEU_CyberSecurity_Master/blob/main/%E8%87%AA%E7%84%B6%E8%BE%A9%E8%AF%81%E6%B3%95%E5%A4%8D%E4%B9%A0%E5%A4%A7%E7%BA%B22023.md
+* https://github.com/holdyounger/ScopeBlog/issues/29
+* https://lgwangh.github.io/2019/11/19/%E8%87%AA%E7%84%B6%E8%BE%A9%E8%AF%81%E6%B3%95/#%E9%A9%AC%E5%85%8B%E6%80%9D%E4%B8%BB%E4%B9%89%E8%87%AA%E7%84%B6%E8%A7%82%E7%9A%84%E5%8F%91%E5%B1%95
+* https://github.com/pepsicoke7/Dialectics-of-Nature-ChineseEdition/tree/main
+* https://github.com/yindaheng98/Notebook/blob/master/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Revolution/%E8%87%AA%E7%84%B6%E8%BE%A9%E8%AF%81%E6%B3%95%E5%A4%8D%E4%B9%A0.md
+* https://yindaheng98.github.io/Revolution/%E8%87%AA%E7%84%B6%E8%BE%A9%E8%AF%81%E6%B3%95%E5%A4%8D%E4%B9%A0.html
+* https://xiangchengkang.github.io/2023/05/10/ke-cheng-xue-xi/zi-ran-bian-zheng-fa/
+* https://www.marxists.org/chinese/
