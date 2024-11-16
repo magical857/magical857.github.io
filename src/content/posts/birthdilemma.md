@@ -8,17 +8,16 @@ category: 'reprint'
 draft: false 
 lang: 'zh-CN'
 ---
-
-
 # Preface
+
 It is impressive for me when I have read this article. I think the content of this article is pretty simple and useful and significanced. According to that i have some understanding of the relationship between birth and costing of family life.
- 
+
 ---
+
 :::note
 本期选文《夫妻养不起孩子》围绕西方国家 GDP
 上升出生率却下降的现象展开讨论，通过对话回应质疑者观点，探讨了西方出生率下降中高成本所起的作用及常见质疑。
 :::
-
 
 # 夫妻养不起孩子
 
@@ -32,7 +31,7 @@ Kids*](https://link.zhubai.love/api/link?url=https%3A%2F%2Ferik-engheim.medium.c
 
 **质疑：**「经济成本是导致出生率下降的原因？得了吧。以前贫穷的家庭有六个、八个，甚至九个孩子！如果他们能应付，那么今天'比以往任何时候都富有'的家庭就没有任何借口。」
 
-**回应：**乍一看，这似乎有些矛盾。今天的人均 GDP
+**回应：** 乍一看，这似乎有些矛盾。今天的人均 GDP
 远远超过了我们曾祖父母的水平，经济压力怎么会是一个原因呢？
 但重要的是要了解我们的现代经济是如何转移成本的，尤其是对养家糊口至关重要的服务。
 
