@@ -126,7 +126,7 @@ const jsonLd = {
             }
 
 
-            <Markdown class="mb-6 markdown-content onload-animation">
+            <Markdown class={`mb-6 markdown-content onload-animation ${entry.data.lang}`}>
                 <Content />
             </Markdown>
 
@@ -172,4 +172,12 @@ const jsonLd = {
 #post-container :nth-child(4) { animation-delay: calc(var(--content-delay) + 175ms) }
 #post-container :nth-child(5) { animation-delay: calc(var(--content-delay) + 250ms) }
 #post-container :nth-child(6) { animation-delay: calc(var(--content-delay) + 325ms) } 
+
+#post-container .markdown-content[lang^="zh_CN"] p {
+  text-indent: 2em !important;
+}
+
+p {
+  text-indent: 2em;
+}
 </style>
