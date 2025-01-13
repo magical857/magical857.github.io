@@ -64,6 +64,7 @@ if (fs.existsSync(filePath)) {
 const content = `---
 title: ${options.title || options.filename}
 published: ${getDate()}
+lastUpdated: ${getDate()}
 description: ''
 image: ''
 tags: ${options.tags ? `[${options.tags.split(',').map(tag => `"${tag.trim()}"`).join(', ')}]` : '[]'}

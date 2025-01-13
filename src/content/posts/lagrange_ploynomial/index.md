@@ -1,6 +1,7 @@
 ---
 title: Lagrange Interpolation
 published: 2024-11-08
+lastUpdated: 2024-11-08
 description: 'principles and realization of lagrange interpolation'
 image: '/imgs/numerical analysis/Lagrange_polynomial.svg'
 tags: [numerical analysis,math]
@@ -31,6 +32,7 @@ $$
 $$
 
 So we can obtain the following equation set:
+
 $$
 \begin{cases}
 a_0+a_1*x_0+a_2*x_0^2 + a_3*x_0^3+...+a_n*x_0^n=y_0\\
@@ -41,6 +43,7 @@ a_0+a_1*x_n+a_2*x_n^2 + a_3*x_n^3+...+a_n*x_n^n=y_n\\
 \end{cases}
 \tag{1}
 $$
+
 subsequently,the matrix $A$ and vector $x$ and $b$ can be expressed by,
 
 $$
@@ -61,20 +64,25 @@ y_0\\y_1\\y_2\\\vdots\\y_n
 $$
 
 the Eq.(1) can be rewritten,
+
 $$
 Ax=b
 $$
+
 A is denoted the vandermonde determinant which has an important property,
-$$ 
+
+$$
 det(A)=det(A^T)=\prod\limits^{n}_{0\leq i<j\leq n}(x_j-x_i)
 $$
-the det is not equal to zero beacuse that all valriables are different each other. As mentioned above, We can say that $n+1$ 
+
+the det is not equal to zero beacuse that all valriables are different each other. As mentioned above, We can say that $n+1$
 different points can determine an unique n order polynomial curve.
+
 ## lagrange remainder
 
 To be honisted, whatever you had many points about any curve, it it is believed that always contains the error between the ploynomial and the real part. And then we can define the error by,
 
-$$ 
+$$
 R_n(x)=f(x)-L_n(x)
 \tag{2}
 $$
@@ -84,6 +92,7 @@ where $L_n(x)$ is the ploynomial curve , $f(x)$ is the real part of the curve an
 $$
 R_n(x)=\frac{f^{(n+1)}(\epsilon)}{(n+1)!}(x-x_0)(x-x_1)\dots(x-x_n)\quad,\epsilon\in[x_0,x_n]
 $$
-this can be proofed by Rolle's theorem.
-## realization of python
 
+this can be proofed by Rolle's theorem.
+
+## realization of python

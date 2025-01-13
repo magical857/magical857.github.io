@@ -13,15 +13,41 @@ import PostMetadata from '../../components/PostMeta.astro'
 import ImageWrapper from '../../components/misc/ImageWrapper.astro'
 import { profileConfig, siteConfig } from '../../config'
 import { formatDateToYYYYMMDD } from '../../utils/date-utils'
+import { execSync } from 'node:child_process'
 
 export async function getStaticPaths() {
   const blogEntries = await getCollection('posts', ({ data }) => {
     return import.meta.env.PROD ? data.draft !== true : true
   })
-  return blogEntries.map(entry => ({
-    params: { slug: entry.slug },
-    props: { entry },
-  }))
+
+  return blogEntries.map(entry => {
+    // 获取文件的最后 Git 提交时间
+    const filePath = path.join('src/content/posts', entry.id)
+    let lastUpdated
+
+    try {
+      // 获取文件的最后一次提交时间
+      lastUpdated = execSync(`git log -1 --pretty="format:%ci" ${filePath}`).toString().trim()
+    } catch (error: unknown) {
+      if (error instanceof Error) {
+        console.warn(`Failed to get Git commit time for ${filePath}:`, error.message)
+      }
+      lastUpdated = entry.data.published
+    }
+
+    return {
+      params: { slug: entry.slug },
+      props: { 
+        entry: {
+          ...entry,
+          data: {
+            ...entry.data,
+            lastUpdated: lastUpdated ? new Date(lastUpdated) : entry.data.published
+          }
+        }
+      },
+    }
+  })
 }
 
 const { entry } = Astro.props
@@ -45,7 +71,7 @@ const jsonLd = {
   // TODO include cover image here
 }
 ---
-<MainGridLayout banner={entry.data.image} title={entry.data.title} description={entry.data.description} lang={entry.data.lang} setOGTypeArticle={true} headings={headings}>
+<MainGridLayout banner={entry.data.image} title={entry.data.title} description={entry.data.description} lang={entry.data.lang} setOGTypeArticle={true} headings={headings} lastUpdated={entry.data.lastUpdated}>
     <script is:inline slot="head" type="application/ld+json" set:html={JSON.stringify(jsonLd)}></script>
     <div class="flex w-full rounded-[var(--radius-large)] overflow-hidden relative mb-4">
         <div id="post-container" class:list={["card-base z-10 px-6 md:px-9 pt-6 pb-4 relative w-full ",
@@ -86,6 +112,7 @@ const jsonLd = {
                 <PostMetadata
                         class="mb-5"
                         published={entry.data.published}
+                        lastUpdated={entry.data.lastUpdated}
                         tags={entry.data.tags}
                         category={entry.data.category}
                 ></PostMetadata>
@@ -103,7 +130,13 @@ const jsonLd = {
                 <Content />
             </Markdown>
 
-            {licenseConfig.enable && <License title={entry.data.title} slug={entry.slug} pubDate={entry.data.published} class="mb-6 rounded-xl license-container onload-animation"></License>}
+            {licenseConfig.enable && <License
+                title={entry.data.title}
+                slug={entry.slug}
+                pubDate={entry.data.published}
+                lastUpdated={entry.data.lastUpdated}
+                class="my-4"
+            ></License>}
 
         </div>
     </div>

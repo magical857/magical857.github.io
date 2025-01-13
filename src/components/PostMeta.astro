@@ -11,8 +11,10 @@ interface Props {
   tags: string[]
   category: string
   hideTagsForMobile?: boolean
+  lastUpdated?: Date
 }
-const { published, tags, category, hideTagsForMobile = false } = Astro.props
+
+const { published, tags, category, hideTagsForMobile = false, lastUpdated } = Astro.props
 const className = Astro.props.class
 ---
 
@@ -25,6 +27,16 @@ const className = Astro.props.class
         </div>
         <span class="text-50 text-sm font-medium">{formatDateToYYYYMMDD(published)}</span>
     </div>
+
+    <!-- last updated date -->
+    {lastUpdated && (
+        <div class="flex items-center">
+            <div class="meta-icon">
+                <Icon name="material-symbols:edit-calendar-outline-rounded" class="text-xl"></Icon>
+            </div>
+            <span class="text-50 text-sm font-medium">最后更新于：{formatDateToYYYYMMDD(lastUpdated)}</span>
+        </div>
+    )}
 
     <!-- categories -->
     <div class="flex items-center">

@@ -1,6 +1,7 @@
 ---
 title: MPC simple learn
 published: 2024-08-06
+lastUpdated: 2024-08-07
 description: 'MPC realization with ipopt'
 image: './MPC.png'
 tags: [MPC,]
@@ -8,7 +9,6 @@ category: 'technology'
 draft: false 
 lang: 'zh-CN'
 ---
-
 # 前言
 
 经过上次[MPCLearn](https://cn.overleaf.com/project/667111b9640abc2d8b517bdd)文档之后，对MPC确实有了一定的了解，但是只是非常浅的一部分，导师给出了很多改进的建议、方向，在此感谢导师能在百忙之中指导。之后依据导师给出的建议在互联网上搜寻了各种相关资料和教程，例如：MPC的C++实现、使用[IPopt](https://coin-or.github.io/Ipopt/)求解库、自动微分([cppAD](https://www.coin-or.org/CppAD/Doc/ipopt_solve_get_started.cpp.htm))、[Linux开发](https://www.bilibili.com/video/BV1fy4y1b7TC/?share_source=copy_web&vd_source=9ae9c88ec0cd688ee796da26703c7502)等等。对于C++从某种程度上来说是C的超集，通过这段时间的查看和修改别人的MPC源码逐渐适应了C++的一些新特性，例如：命名空间、类、类型模板、函数重载、运算符重载、引用等等。经过不断的实操也逐渐适应了一些Linux命令以及CMake的用法，这些将为后续的学习打好坚实的基础。最终在不断的梳理现有代码以及不断的修改试验添加的新内容努力下完成了myMPC_v1的项目，不过在这期间碰到了不少的坑，遂萌生了写一篇总结报告记录下来，也好重新梳理一遍查漏补缺。
@@ -27,75 +27,74 @@ lang: 'zh-CN'
 
 ## 项目简介
 
--   实现功能：给定参考轨迹，小车通过MPC算法跟踪轨迹，绘制轨迹跟踪动态图以及状态变量曲线图。
-
--   参考项目：https://github.com/rising-turtle/SelfDriving.git
-
--   编程语言：C++
+- 实现功能：给定参考轨迹，小车通过MPC算法跟踪轨迹，绘制轨迹跟踪动态图以及状态变量曲线图。
+- 参考项目：https://github.com/rising-turtle/SelfDriving.git
+- 编程语言：C++
 
 ## 项目内容
 
-1.  项目依赖安装参照项目简介
+1. 项目依赖安装参照项目简介
+2. 车辆运动学模型（简化版）、目标函数和约束条件
 
-2.  车辆运动学模型（简化版）、目标函数和约束条件
+   ![车辆运动模型（左），车辆转向模型（右）](carModule.png)
 
-    ![车辆运动模型（左），车辆转向模型（右）](carModule.png)
+   参考[文章分析](https://blog.csdn.net/qq_42258099/article/details/95353986)，可以得到最终的状态方程（模型状态等式约束方程组）：
 
-    参考[文章分析](https://blog.csdn.net/qq_42258099/article/details/95353986)，可以得到最终的状态方程（模型状态等式约束方程组）：
-    $$
-    \begin{aligned}
-    \begin{cases}
-    x_{t+1} &= x_t+v_t*cos(\varphi_t)*dt \\
-    y_{t+1} &= y_t+v_t*sin(\varphi_t)*dt \\
-    \varphi_{t+1} &= \varphi_t+\dfrac{v_t}{L_f}*\delta_t*dt \\
-    v_{t+1}&=v_t+a_t*dt\\
-    cte_{t+1}&=f(x_t) - y_t +v_t*sin(e\varphi_t)*dt\\
-    e\varphi_t+1 &=\varphi_t - \varphi des_t +\dfrac{v_t}{L_f}*\delta_t*dt
-    \end{cases}
-    \end{aligned}
-    $$ 
-    
-    目标函数：
-    $$
-    J = \sum_{i=0}^{N-1} \left[ 2500(cte_i - ref\_cte)^2 + 2500(\varphi_i - ref\_\varphi)^2 + (v_i - ref\_v)^2 \right]\\
-    + \sum_{i=0}^{N-2} \left[ 5(\delta_i)^2 + 100(a_i)^2 + 700(\delta_i \cdot v_i)^2 \right]\\
-    + \sum_{i=0}^{N-3} \left[ 200(\delta_{i+1} - \delta_i)^2 + 10(a_{i+1} - a_i)^2 \right]
-    $$ 
-    其中的权重系数可以任意修改。物理约束条件： 
+   $$
+   \begin{aligned}
+   \begin{cases}
+   x_{t+1} &= x_t+v_t*cos(\varphi_t)*dt \\
+   y_{t+1} &= y_t+v_t*sin(\varphi_t)*dt \\
+   \varphi_{t+1} &= \varphi_t+\dfrac{v_t}{L_f}*\delta_t*dt \\
+   v_{t+1}&=v_t+a_t*dt\\
+   cte_{t+1}&=f(x_t) - y_t +v_t*sin(e\varphi_t)*dt\\
+   e\varphi_t+1 &=\varphi_t - \varphi des_t +\dfrac{v_t}{L_f}*\delta_t*dt
+   \end{cases}
+   \end{aligned}
+   $$
 
-    $$
-    \begin{cases}
-    \varphi \in [-25^\circ,25^\circ]\\
-    a \in [-1,1]
-    \end{cases}
-    $$
+   目标函数：
 
-3.  代码分析:
+   $$
+   J = \sum_{i=0}^{N-1} \left[ 2500(cte_i - ref\_cte)^2 + 2500(\varphi_i - ref\_\varphi)^2 + (v_i - ref\_v)^2 \right]\\
+   + \sum_{i=0}^{N-2} \left[ 5(\delta_i)^2 + 100(a_i)^2 + 700(\delta_i \cdot v_i)^2 \right]\\
+   + \sum_{i=0}^{N-3} \left[ 200(\delta_{i+1} - \delta_i)^2 + 10(a_{i+1} - a_i)^2 \right]
+   $$
 
-    项目文件如下图所示
+   其中的权重系数可以任意修改。物理约束条件：
 
-    ![myMPC_v1文件树](myMPC_v1files.png)
+   $$
+   \begin{cases}
+   \varphi \in [-25^\circ,25^\circ]\\
+   a \in [-1,1]
+   \end{cases}
+   $$
+3. 代码分析:
 
-    图形绘制使用了[matplotlibcpp库](https://matplotlib-cpp.readthedocs.io/en/latest/index.html),这是一个可以用C++调用Python库matplot的头文件库，后续计划采用将数据导出为csv格式然后再用Python绘制图形。参考轨迹采用多项式拟合的方式，本项目的轨迹是由ploy库拟合的一个三次多项式。下面重点分析MPC.cpp文档：
+   项目文件如下图所示
 
-    1.  创建函数对象FG_eval也就是FG_eval类定义了operator()运算符，该运算符接受两个参数：ADvector&fg和const
-        ADvector
-        &vars，在这个运算符中，对如下形式的目标函数和约束条件进行操作
-        $$
-        \begin{aligned}
-            \text{minimize} \quad & f(x) \\
-            \text{subject to} \quad & gl \leq g(x) \leq gu \\& xl \leq x \leq xu
-        \end{aligned}
-        $$
-        并存储在fg中。值得一提的是代码中的g(x)是前面提到的等式约束方程组。
+   ![myMPC_v1文件树](myMPC_v1files.png)
 
-    2.  设置约束条件范围
+   图形绘制使用了[matplotlibcpp库](https://matplotlib-cpp.readthedocs.io/en/latest/index.html),这是一个可以用C++调用Python库matplot的头文件库，后续计划采用将数据导出为csv格式然后再用Python绘制图形。参考轨迹采用多项式拟合的方式，本项目的轨迹是由ploy库拟合的一个三次多项式。下面重点分析MPC.cpp文档：
 
-4.  效果演示
+   1. 创建函数对象FG_eval也就是FG_eval类定义了operator()运算符，该运算符接受两个参数：ADvector&fg和const
+      ADvector
+      &vars，在这个运算符中，对如下形式的目标函数和约束条件进行操作
 
-    ![trajectory](trajectory.png)
-    ![cost](cost.png)
-    ![states](states.png)
+      $$
+      \begin{aligned}
+          \text{minimize} \quad & f(x) \\
+          \text{subject to} \quad & gl \leq g(x) \leq gu \\& xl \leq x \leq xu
+      \end{aligned}
+      $$
+
+      并存储在fg中。值得一提的是代码中的g(x)是前面提到的等式约束方程组。
+   2. 设置约束条件范围
+4. 效果演示
+
+   ![trajectory](trajectory.png)
+   ![cost](cost.png)
+   ![states](states.png)
 
 # 最后
 
