@@ -2,7 +2,7 @@
 title: 2024Summary
 published: 2025-01-01
 description: 'Reviewing the 2024 ,Looking ahead to 2025'
-image: '/imgs/reprint/'
+image: '/imgs/reprint/fairwork.jpg'
 tags: [life,]
 category: 'blog'
 draft: false 
