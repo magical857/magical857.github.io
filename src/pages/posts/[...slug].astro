@@ -37,7 +37,7 @@ export async function getStaticPaths() {
 
     return {
       params: { slug: entry.slug },
-      props: { 
+      props: {
         entry: {
           ...entry,
           data: {
@@ -45,7 +45,7 @@ export async function getStaticPaths() {
             lastUpdated: lastUpdated ? new Date(lastUpdated) : entry.data.published
           }
         }
-      },
+      }
     }
   })
 }

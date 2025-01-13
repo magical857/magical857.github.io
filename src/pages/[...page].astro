@@ -5,10 +5,41 @@ import Pagination from '../components/control/Pagination.astro'
 import { PAGE_SIZE } from '../constants/constants'
 import MainGridLayout from '../layouts/MainGridLayout.astro'
 import { getSortedPosts } from '../utils/content-utils'
+import { execSync } from 'node:child_process'
+import path from 'node:path'
 
 export const getStaticPaths = (async ({ paginate }) => {
   const allBlogPosts = await getSortedPosts()
-  return paginate(allBlogPosts, { pageSize: PAGE_SIZE })
+
+  // 为每篇文章添加 lastUpdated
+  const postsWithLastUpdated = allBlogPosts.map(entry => {
+    const filePath = path.join('src/content/posts', entry.slug + '.md')
+    let lastUpdated
+
+    try {
+      // 获取文件的最后一次提交时间
+      lastUpdated = execSync(`git log -1 --pretty="format:%ci" ${filePath}`).toString().trim()
+      // 确保 lastUpdated 是有效的日期字符串
+      if (!lastUpdated || isNaN(new Date(lastUpdated).getTime())) {
+        throw new Error('Invalid Git commit time')
+      }
+    } catch (error: unknown) {
+      if (error instanceof Error) {
+        console.warn(`Failed to get Git commit time for ${filePath}:`, error.message)
+      }
+      lastUpdated = entry.data.published
+    }
+
+    return {
+      ...entry,
+      data: {
+        ...entry.data,
+        lastUpdated: new Date(lastUpdated)
+      }
+    }
+  })
+
+  return paginate(postsWithLastUpdated, { pageSize: PAGE_SIZE })
 }) satisfies GetStaticPaths
 // https://github.com/withastro/astro/issues/6507#issuecomment-1489916992
 
