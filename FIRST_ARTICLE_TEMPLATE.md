@@ -237,15 +237,3 @@ draft: true
 **重新启程，继续加油！** 💪
 
 ---
-
-## 系列文章
-
-- [停学一年，重新启程](#) ← 当前
-- [搭建智能体辅助学习系统](#) ← 下一期预告
-- [传感器列表功能的实现](#) ← 待完成
-
-## 项目相关
-
-- **项目地址**: [GitHub 链接]
-- **学习进度**: [LEARNING_PROGRESS.md](https://github.com/magical857/wh01/blob/main/LEARNING_PROGRESS.md)
-- **项目架构**: [CLAUDE.md](https://github.com/magical857/wh01/blob/main/CLAUDE.md)
